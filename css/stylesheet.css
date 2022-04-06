@@ -1,10 +1,11 @@
 :root {
-    --colors-background-dark: #042c5f;
+    --colors-background-dark: #2d2d2d;
     --colors-background-light: #ffff;
     --colors-text-light: #fff;
-    --colors-text-highlight: #456ebf;
+    --colors-text-highlight: #4c4c4c;
     --colors-text-dark: #000;
     --fonts-normal-text: arial, verdana;
+    --mdc-theme-primary: #07f2b0 !important;
 }
 
 body{
@@ -13,7 +14,7 @@ body{
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
-    background: linear-gradient(#316dbc,#042c5f) center center no-repeat var(--colors-background-dark);
+    background: #2f2f2f;
     background-size: cover;
     font-family: var(--fonts-normal-text);
     font-size: 14px;
@@ -46,5 +47,14 @@ body{
 .container form #fmessage{
     width: 400px;
     height: 400px;
+}
+
+.message-field{
+    width: 300px;
+    margin: 20px 0;
+}
+
+.send-button{
+    display: block;
 }
 

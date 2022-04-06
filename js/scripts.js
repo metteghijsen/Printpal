@@ -10,7 +10,3 @@ if("serviceWorker" in navigator){
     //The registration of the service worker failed
     console.log("Browser: I don't support Service Workers :(");
 }
-
-import {MDCTextField} from '@material/textfield';
-
-const textField = new MDCTextField(document.querySelector('.mdc-text-field'));
