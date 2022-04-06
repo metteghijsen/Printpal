@@ -1,25 +1,25 @@
 {
-  "short_name": "FirstPWA",
-  "name": "FirstPWA: Sample site",
+  "short_name": "Printpal",
+  "name": "Printpal: Print to meet your new pal!",
   "icons": [
     {
-      "src": "images/icon2.png",
+      "src": "images/printpal512icon.png",
       "type": "image/png",
       "sizes": "512x512",
       "purpose": "any maskable"
     },
     {
-      "src": "images/icon1.png",
+      "src": "images/printpal192icon.png",
       "type": "image/png",
       "sizes": "192x192",
       "purpose": "any maskable"
     }
   ],
   "start_url": "./",
-  "background_color": "#3367D6",
+  "background_color": "#042c5f",
   "display": "standalone",
   "scope": ".",
-  "theme_color": "#3367D6",
+  "theme_color": "#042c5f",
   "shortcuts": [
     {
       "name": "How's weather today?",
