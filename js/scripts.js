@@ -51,13 +51,13 @@ import {
     const database = getDatabase(app);
   
 
-    /*Function for writing data to database*/
+ /*Function for writing data to database*/
     
     function writeUserData(message) {
         console.log(database);
         // userId = document.getElementById('userId').value;;
         message = document.getElementById('messageForm').value;
-        set(ref(database, 'users/' + message), {
+        set(ref(database, 'messages/' + message), {
           anonymousmessage: message,
         });
         console.log("Done");
