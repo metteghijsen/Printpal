@@ -6,3 +6,5 @@
 /dataSources.local.xml
 # Editor-based HTTP Client requests
 /httpRequests/
+# Node_modules map
+/node_modules/
