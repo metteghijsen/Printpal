@@ -6,6 +6,7 @@
     --colors-text-dark: #000;
     --fonts-normal-text: arial, verdana;
     --mdc-theme-primary: #07f2b0 !important;
+    --mdc-theme-secondary: #07f2b0 !important;
 }
 
 body{
@@ -35,7 +36,8 @@ body{
 }
 
 .container .logo{
-    height: 150px;
+    height: 7vh;
+    margin: 30px;
 }
 
 .container form{
@@ -52,6 +54,9 @@ body{
 .message-field{
     width: 300px;
     margin: 20px 0;
+    background-color: white;
+    border-radius: 10px;
+    color: var(--mdc-theme-secondary);
 }
 
 .send-button{

@@ -11,8 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <!--    Material inladen-->
-    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
-    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.css">
 
     <!--Manifest inladen voor PWA-->
     <link rel="manifest" href="manifest.json">
@@ -25,18 +24,14 @@
     <img src="images/printpallogo.png" alt="logo" class="logo">
 
     <form action="">
-        <label class="mdc-text-field mdc-text-field--outlined">
-  <span class="mdc-notched-outline">
-    <span class="mdc-notched-outline__leading"></span>
-    <span class="mdc-notched-outline__notch">
-      <span class="mdc-floating-label" id="my-label-id">Write your message</span>
-    </span>
-    <span class="mdc-notched-outline__trailing"></span>
-  </span>
-            <input type="text" class="mdc-text-field__input" aria-labelledby="my-label-id">
+        <label class="mdc-text-field message-field">
+            <span class="mdc-text-field__ripple"></span>
+            <input type="text" class="mdc-text-field__input" aria-labelledby="my-label">
+            <span class="mdc-floating-label" id="my-label">Type your message</span>
+            <span class="mdc-line-ripple"></span>
         </label>
 
-        <button class="mdc-button mdc-button--raised mdc-button--leading">
+        <button class="mdc-button mdc-button--raised mdc-button--leading send-button">
             <span class="mdc-button__ripple"></span>
             <i class="material-icons mdc-button__icon" aria-hidden="true">send</i>
             <span class="mdc-button__label">Send</span>
@@ -44,6 +39,10 @@
     </form>
 </div>
 <script src="js/scripts.js" type="text/javascript"></script>
-<script src="js/material.js" type="text/javascript"></script>
+<script src="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.js"></script>
+<script>
+    const textField = new mdc.textField.MDCTextField(document.querySelector('.mdc-text-field'));
+    const helperText = new mdc.textField.MDCTextFieldHelperText(document.querySelector('.mdc-text-field-helper-text'));
+</script>
 </body>
 </html>
