@@ -6,6 +6,16 @@
     --colors-text-dark: #000;
     --fonts-normal-text: arial, verdana;
     --mdc-theme-primary: #07f2b0 !important;
+    --mdc-theme-on-primary: #ffffff !important;
+    --mdc-theme-secondary: #06BFBF !important;
+    --mdc-theme-on-secondary: #ffffff !important;
+    --mdc-theme-surface: #07f2b0 !important;
+    --mdc-theme-on-surface: #ffffff !important;
+    --mdc-theme-background: #2f2f2f !important;
+}
+
+::selection{
+    background: var(--mdc-theme-secondary);
 }
 
 @font-face {

@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51dcc6e6-81f7-431f-a13c-471b16c5d15f" name="Default Changelist" comment="Textbox label error gefixt, design tot nu toe responsive gemaakt">
-      <change afterPath="$PROJECT_DIR$/fonts/Montserrat-Regular.ttf" afterDir="false" />
+    <list default="true" id="51dcc6e6-81f7-431f-a13c-471b16c5d15f" name="Default Changelist" comment="Footer gemaakt, kleine foutjes opgeschoond">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylesheet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/material.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +66,7 @@
       <updated>1649149686355</updated>
       <workItem from="1649149687745" duration="3876000" />
       <workItem from="1649232899450" duration="508000" />
-      <workItem from="1649330475096" duration="5103000" />
+      <workItem from="1649330475096" duration="7253000" />
     </task>
     <task id="LOCAL-00001" summary="Basis PWA opgezet">
       <created>1649233631368</created>
@@ -106,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649341807117</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Footer gemaakt, kleine foutjes opgeschoond">
+      <created>1649343200070</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1649343200070</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +134,7 @@
     <MESSAGE value="Logo en textbox toegevoegd" />
     <MESSAGE value="Material design geïnstalleerd" />
     <MESSAGE value="Textbox label error gefixt, design tot nu toe responsive gemaakt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Textbox label error gefixt, design tot nu toe responsive gemaakt" />
+    <MESSAGE value="Footer gemaakt, kleine foutjes opgeschoond" />
+    <option name="LAST_COMMIT_MESSAGE" value="Footer gemaakt, kleine foutjes opgeschoond" />
   </component>
 </project>
