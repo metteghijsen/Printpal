@@ -6,7 +6,11 @@
     --colors-text-dark: #000;
     --fonts-normal-text: arial, verdana;
     --mdc-theme-primary: #07f2b0 !important;
-    --mdc-theme-secondary: #07f2b0 !important;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
 }
 
 body{
@@ -56,10 +60,30 @@ body{
     margin: 20px 0;
     background-color: white;
     border-radius: 10px;
-    color: var(--mdc-theme-secondary);
+    color: var(--mdc-theme-primary);
 }
 
 .send-button{
     display: block;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    font-family: Montserrat;
+    font-size: 10px;
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #1c1c1c;
+    color: white;
+    text-align: center;
 }
 
