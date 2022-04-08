@@ -93,3 +93,10 @@ footer {
 .mdc-text-field .mdc-text-field__input {
   caret-color: #07f2b0 !important;
 }
+
+.taskbar-icons{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
