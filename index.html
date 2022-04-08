@@ -24,21 +24,18 @@
 <body>
 <div class="container">
     <img src="images/printpallogo.png" alt="logo" class="logo">
-
-    <form action="">
-        <label class="mdc-text-field message-field">
+        <label class="mdc-text-field messageForm">
             <span class="mdc-text-field__ripple"></span>
-            <input type="text" class="mdc-text-field__input" aria-labelledby="my-label">
+            <input type="text" class="mdc-text-field__input" aria-labelledby="my-label" id="messageForm">
             <span class="mdc-floating-label" id="my-label">Type your message</span>
             <span class="mdc-line-ripple"></span>
         </label>
 
-        <button class="mdc-button mdc-button--raised mdc-button--leading send-button">
+        <button class="mdc-button mdc-button--raised mdc-button--leading sendbutton" id="sendbutton">
             <span class="mdc-button__ripple"></span>
             <i class="material-icons mdc-button__icon" aria-hidden="true">send</i>
             <span class="mdc-button__label">Send</span>
         </button>
-    </form>
 </div>
 
 <script src="js/scripts.js" type="text/javascript"></script>

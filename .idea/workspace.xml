@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51dcc6e6-81f7-431f-a13c-471b16c5d15f" name="Default Changelist" comment="Material theme in proberen te stellen">
+    <list default="true" id="51dcc6e6-81f7-431f-a13c-471b16c5d15f" name="Default Changelist" comment="Theming aangepast, textfield probleem proberen op te lossen">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylesheet.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
@@ -67,7 +67,8 @@
       <updated>1649149686355</updated>
       <workItem from="1649149687745" duration="3876000" />
       <workItem from="1649232899450" duration="508000" />
-      <workItem from="1649330475096" duration="9536000" />
+      <workItem from="1649330475096" duration="9793000" />
+      <workItem from="1649404513907" duration="631000" />
     </task>
     <task id="LOCAL-00001" summary="Basis PWA opgezet">
       <created>1649233631368</created>
@@ -118,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649345206644</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Theming aangepast, textfield probleem proberen op te lossen">
+      <created>1649365254773</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1649365254773</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,6 +152,7 @@
     <MESSAGE value="Textbox label error gefixt, design tot nu toe responsive gemaakt" />
     <MESSAGE value="Footer gemaakt, kleine foutjes opgeschoond" />
     <MESSAGE value="Material theme in proberen te stellen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Material theme in proberen te stellen" />
+    <MESSAGE value="Theming aangepast, textfield probleem proberen op te lossen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Theming aangepast, textfield probleem proberen op te lossen" />
   </component>
 </project>
