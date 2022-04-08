@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
+    <!--    Bootstrap icons inladen-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <!--    Google icons inladen-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!--    Material inladen-->
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.css">
+
+    <!--Manifest inladen voor PWA-->
+    <link rel="manifest" href="manifest.json">
+
+    <link rel="icon" href="images/printpal512icon.png">
+    <title>Printpal</title>
+
+    <script type="module" src="js/scripts.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <img src="images/printpallogo.png" alt="logo" class="logo">
+
+    <div class="mdc-text-field mdc-text-field--with-leading-icon login-textfield">
+        <i class="material-icons mdc-text-field__icon" tabindex="0" role="button">email</i>
+        <input type="text" id="username" class="mdc-text-field__input">
+        <label for="username" class="mdc-floating-label">Email</label>
+        <div class="mdc-line-ripple"></div>
+    </div>
+
+    <div class="mdc-text-field mdc-text-field--with-leading-icon mdc-text-field--with-trailing-icon password-textfield">
+        <i class="material-icons mdc-text-field__icon">lock</i>
+        <input type="text" id="my-input" class="mdc-text-field__input">
+        <label for="my-input" class="mdc-floating-label">Password</label>
+        <i class="material-icons mdc-text-field__icon" tabindex="0" role="button"><span class="material-icons">visibility_off</span></i>
+        <div class="mdc-line-ripple"></div>
+    </div>
+
+    <div class="login-screen-buttons">
+        <button class="mdc-button mdc-button--raised login-button">
+            <span class="mdc-button__label">Login</span>
+        </button>
+
+        <button class="mdc-button mdc-button--outlined signup-button">
+            <span class="mdc-button__ripple"></span>
+            <span class="mdc-button__label">Sign up</span>
+        </button>
+    </div>
+</div>
+
+<script src="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.js"></script>
+<script>
+    const textField = new mdc.textField.MDCTextField(document.querySelector('.mdc-text-field'));
+    const helperText = new mdc.textField.MDCTextFieldHelperText(document.querySelector('.mdc-text-field-helper-text'));
+</script>
+
+</body>
+</html>

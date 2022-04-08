@@ -1,7 +1,7 @@
 :root {
   --colors-background-dark: #2d2d2d;
   --colors-background-light: #ffff;
-  --colors-text-light: #fff;
+  --colors-text-light: #4c4c4c;
   --colors-text-highlight: #4c4c4c;
   --colors-text-dark: #000;
   --fonts-normal-text: arial, verdana;
@@ -10,6 +10,7 @@
   --mdc-theme-on-primary: #ffffff !important;
   --mdc-theme-surface: #06bfbf !important;
   --mdc-theme-on-surface: #000000 !important;
+  --mdc-text-field-icon: #4c4c4c !important;
 }
 
 ::selection {
@@ -99,4 +100,26 @@ footer {
   width: 100%;
   justify-content: space-evenly;
   flex-direction: row;
+}
+
+.login-textfield{
+  width: 300px;
+  margin: 10px;
+}
+
+.password-textfield{
+  width: 300px;
+  margin: 10px;
+}
+
+.login-screen-buttons{
+  display: flex;
+}
+
+.login-button{
+  margin: 5px;
+}
+
+.signup-button{
+  margin: 5px;
 }
