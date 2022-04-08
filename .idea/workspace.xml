@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51dcc6e6-81f7-431f-a13c-471b16c5d15f" name="Default Changelist" comment="Taakbalk gemaakt met behulp van Material Design componenten">
-      <change afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
+    <list default="true" id="51dcc6e6-81f7-431f-a13c-471b16c5d15f" name="Default Changelist" comment="Login scherm proberen te maken.&#10;- Twee tekstvakken toegevoegd&#10;- Twee knoppen toegevoegd">
+      <change afterPath="$PROJECT_DIR$/signup.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649411760133</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Login scherm proberen te maken.&#10;- Twee tekstvakken toegevoegd&#10;- Twee knoppen toegevoegd">
+      <created>1649413581944</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1649413581944</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,6 +168,7 @@
     <MESSAGE value="Material theme in proberen te stellen" />
     <MESSAGE value="Theming aangepast, textfield probleem proberen op te lossen" />
     <MESSAGE value="Taakbalk gemaakt met behulp van Material Design componenten" />
-    <option name="LAST_COMMIT_MESSAGE" value="Taakbalk gemaakt met behulp van Material Design componenten" />
+    <MESSAGE value="Login scherm proberen te maken.&#10;- Twee tekstvakken toegevoegd&#10;- Twee knoppen toegevoegd" />
+    <option name="LAST_COMMIT_MESSAGE" value="Login scherm proberen te maken.&#10;- Twee tekstvakken toegevoegd&#10;- Twee knoppen toegevoegd" />
   </component>
 </project>
