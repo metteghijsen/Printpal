@@ -1,3 +1,14 @@
+const showPasswordButton = document.getElementById("showPasswordButton");
+showPasswordButton.addEventListener("click",showPassword);
+function showPassword() {
+    let x = document.getElementById("password");
+    if (x.type === "password") {
+        x.type = "text";
+    } else {
+        x.type = "password";
+    }
+}
+
 if("serviceWorker" in navigator){
     navigator.serviceWorker.register("service-worker.js").then(function(registering){
         // Registration was successful
@@ -10,8 +21,6 @@ if("serviceWorker" in navigator){
     //The registration of the service worker failed
     console.log("Browser: I don't support Service Workers :(");
 }
-
-
 
 /* Firebase Database Connection */
 

@@ -102,12 +102,7 @@ footer {
   flex-direction: row;
 }
 
-.login-textfield{
-  width: 300px;
-  margin: 10px;
-}
-
-.password-textfield{
+.textfield{
   width: 300px;
   margin: 10px;
 }

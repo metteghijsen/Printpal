@@ -21,30 +21,28 @@
     <link rel="icon" href="images/printpal512icon.png">
     <title>Printpal</title>
 
-    <script type="module" src="js/scripts.js"></script>
-
 </head>
 <body>
 <div class="container">
     <img src="images/printpallogo.png" alt="logo" class="logo">
 
-    <div class="mdc-text-field mdc-text-field--with-leading-icon login-textfield">
+    <div class="mdc-text-field mdc-text-field--with-leading-icon login-textfield textfield">
         <i class="material-icons mdc-text-field__icon" tabindex="0" role="button">email</i>
-        <input type="text" id="username" class="mdc-text-field__input">
-        <label for="username" class="mdc-floating-label">Email</label>
+        <input type="email" id="email" class="mdc-text-field__input">
+        <label for="email" class="mdc-floating-label">Email</label>
         <div class="mdc-line-ripple"></div>
     </div>
 
-    <div class="mdc-text-field mdc-text-field--with-leading-icon mdc-text-field--with-trailing-icon password-textfield">
+    <div class="mdc-text-field mdc-text-field--with-leading-icon mdc-text-field--with-trailing-icon password-textfield textfield">
         <i class="material-icons mdc-text-field__icon">lock</i>
-        <input type="text" id="my-input" class="mdc-text-field__input">
-        <label for="my-input" class="mdc-floating-label">Password</label>
-        <i class="material-icons mdc-text-field__icon" tabindex="0" role="button"><span class="material-icons">visibility_off</span></i>
+        <input type="password" id="password" class="mdc-text-field__input">
+        <label for="password" class="mdc-floating-label">Password</label>
+        <i class="material-icons mdc-text-field__icon" tabindex="0" role="button" id="showPasswordButton"><span class="material-icons">visibility_off</span></i>
         <div class="mdc-line-ripple"></div>
     </div>
 
     <div class="login-screen-buttons">
-        <button class="mdc-button mdc-button--raised login-button">
+        <button class="mdc-button mdc-button--raised login-button" type="submit">
             <span class="mdc-button__label">Login</span>
         </button>
 
@@ -59,9 +57,11 @@
 
 <script src="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.js"></script>
 <script>
-    const textField = new mdc.textField.MDCTextField(document.querySelector('.mdc-text-field'));
+    const loginField = new mdc.textField.MDCTextField(document.querySelector('.login-textfield'));
+    const passwordField = new mdc.textField.MDCTextField(document.querySelector('.password-textfield'));
     const helperText = new mdc.textField.MDCTextFieldHelperText(document.querySelector('.mdc-text-field-helper-text'));
 </script>
+<script type="module" src="js/scripts.js"></script>
 
 </body>
 </html>
