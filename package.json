@@ -2,6 +2,7 @@
   "dependencies": {
     "@material/button": "^13.0.0",
     "@material/textfield": "^13.0.0",
+    "firebase": "^9.6.10",
     "material-components-web": "^13.0.0"
   },
   "scripts": {
