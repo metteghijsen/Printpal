@@ -49,14 +49,13 @@ import {
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
   const database = getDatabase(app);
+  const dbRef = ref(getDatabase(app));
       
 function getMessage(){
-    const dbRef = ref(getDatabase(app));
-    console.log(dbRef);
-    get(child(dbRef, "messages/")).then((snapshot) => {
+    // console.log(dbRef);
+    get(child(dbRef, 'messages/')).then((snapshot) => {
         if(snapshot.exists()){
-            console.log("tried");
-            document.getElementById('message').value = snapshot.val().message;
+            snapShotToArray(snapshot);
         } else {
             console.log("No data available");
         }
@@ -64,6 +63,29 @@ function getMessage(){
         console.error(error);
     });
 }
+
+const showMessage = document.getElementById('message');
+const message_val = document.createElement("h1")
+
+function snapShotToArray(snapshot) {
+    let returnArr = [];
+
+    snapshot.forEach(function(childSnapshot) {
+        let item = childSnapshot.val();
+        returnArr.push(item);
+    });
+
+    const rnd = Math.floor(Math.random() * returnArr.length);
+    console.log(rnd);
+
+    const message = returnArr[rnd];
+    console.log(message);
+    
+    message_val.innerHTML = message.anonymousmessage;
+    showMessage.appendChild(message_val);
+
+    // return returnArr;
+};
 
 window.addEventListener('DOMContentLoaded', (event) => {
     console.log('DOM fully loaded and parsed');
