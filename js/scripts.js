@@ -72,7 +72,7 @@ import {
       });
       
 //   const database = getDatabase(app);
-//   const dbRef = ref(getDatabase(app));
+  const dbRef = ref(getDatabase(app));
       
 /**
  * Gets the message from the database and displays it.           
