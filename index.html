@@ -21,8 +21,8 @@
     <link rel="icon" href="images/printpal512icon.png">
     <title>Printpal</title>
 
-    <script type="module" src="js/scripts.js"></script>
-
+    <script type="module" src="js/pwa.js"></script>
+    <script type="module" src="js/sendmessage.js"></script>
 </head>
 <body>
 <div class="container">
@@ -42,6 +42,7 @@
 </div>
 
 <script src="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.js"></script>
+
 <script>
     const textField = new mdc.textField.MDCTextField(document.querySelector('.mdc-text-field'));
     const helperText = new mdc.textField.MDCTextFieldHelperText(document.querySelector('.mdc-text-field-helper-text'));
