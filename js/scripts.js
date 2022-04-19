@@ -51,6 +51,10 @@ import {
   const database = getDatabase(app);
   const dbRef = ref(getDatabase(app));
       
+/**
+ * Gets the message from the database and displays it.           
+ * @returns None           
+ */
 function getMessage(){
     // console.log(dbRef);
     get(child(dbRef, 'messages/')).then((snapshot) => {
@@ -64,9 +68,25 @@ function getMessage(){
     });
 }
 
+/**
+ * Shows a message in the message box.       
+ * @param {string} message - the message to show in the message box.       
+ * @returns None       
+ */
 const showMessage = document.getElementById('message');
+/**
+ * Creates a new element with the given tag name and text content.       
+ * @param {string} tagName - the tag name of the element to create       
+ * @param {string} text - the text content of the element to create       
+ * @returns {HTMLElement} - the created element       
+ */
 const message_val = document.createElement("h1")
 
+/**
+ * Takes in a snapshot and returns an array of the values in the snapshot.       
+ * @param {firebase.database.DataSnapshot} snapshot - the snapshot to convert to an array.       
+ * @returns {Array} - the array of values in the snapshot.       
+ */
 function snapShotToArray(snapshot) {
     let returnArr = [];
 
@@ -87,6 +107,10 @@ function snapShotToArray(snapshot) {
     // return returnArr;
 };
 
+/**
+ * Adds an event listener to the button that will call the getMessage function.           
+ * @returns None           
+ */
 window.addEventListener('DOMContentLoaded', (event) => {
     console.log('DOM fully loaded and parsed');
     document.getElementById("message2").addEventListener("click", e => {
