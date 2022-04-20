@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51dcc6e6-81f7-431f-a13c-471b16c5d15f" name="Default Changelist" comment="Signup formulier gekoppeld aan Firebase. Verschillende Javascript bestanden opgesplitst om errors op te lossen.">
-      <change afterPath="$PROJECT_DIR$/js/auth_login_password.js" afterDir="false" />
+    <list default="true" id="51dcc6e6-81f7-431f-a13c-471b16c5d15f" name="Default Changelist" comment="Inloggen met gegevens uit de database werkend gekregen. Van login pagina de index gemaakt.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/auth_signup_password.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/auth_signup_password.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/auth_login_password.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/auth_login_password.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +73,8 @@
       <workItem from="1649330475096" duration="9793000" />
       <workItem from="1649404513907" duration="631000" />
       <workItem from="1649835599616" duration="1152000" />
-      <workItem from="1650353902460" duration="20226000" />
+      <workItem from="1650353902460" duration="20693000" />
+      <workItem from="1650442881291" duration="752000" />
     </task>
     <task id="LOCAL-00001" summary="Basis PWA opgezet">
       <created>1649233631368</created>
@@ -196,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650378635473</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Inloggen met gegevens uit de database werkend gekregen. Van login pagina de index gemaakt.">
+      <created>1650441729292</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1650441729292</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,6 +237,7 @@
     <MESSAGE value="test push" />
     <MESSAGE value="Login en Signup script opgedeeld in aparte bestanden, zo staat deze niet meer bij de serviceworker en bij firebase in een Javascript bestand." />
     <MESSAGE value="Signup formulier gekoppeld aan Firebase. Verschillende Javascript bestanden opgesplitst om errors op te lossen." />
-    <option name="LAST_COMMIT_MESSAGE" value="Signup formulier gekoppeld aan Firebase. Verschillende Javascript bestanden opgesplitst om errors op te lossen." />
+    <MESSAGE value="Inloggen met gegevens uit de database werkend gekregen. Van login pagina de index gemaakt." />
+    <option name="LAST_COMMIT_MESSAGE" value="Inloggen met gegevens uit de database werkend gekregen. Van login pagina de index gemaakt." />
   </component>
 </project>

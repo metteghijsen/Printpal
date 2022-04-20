@@ -1,6 +1,9 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-app.js";
 import {getAuth, signInWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/9.1.1/firebase-auth.js";
 
+/**
+ * Initializes the Firebase app.
+ */
 const firebaseApp = initializeApp({
     apiKey: "AIzaSyBOAn8uYKrk80TdpijN8gI8GYAyBfZ0qrw",
     authDomain: "printpal-fcd92.firebaseapp.com",
@@ -12,12 +15,23 @@ const firebaseApp = initializeApp({
     databaseURL: "https://printpal-fcd92-default-rtdb.firebaseio.com/"
 })
 
+/**
+ * Get the authentication object from the firebase app.
+ * @param {firebase.app.App} firebaseApp - The firebase app.
+ * @returns {firebase.auth.Auth} The authentication object.
+ */
 const auth = getAuth(firebaseApp);
 const email = document.getElementById("email");
 const password = document.getElementById("password");
 const loginButton = document.getElementById("login-button");
 const signupButton = document.getElementById("signup-button");
 
+/**
+ * A function that handles the login process.
+ * @param {firebase.auth.Auth} auth - The firebase authentication object.
+ * @param {string} email - The email of the user.
+ * @param {string} password - The password of the user.
+ */
 loginButton.addEventListener("click", function (event){
 signInWithEmailAndPassword(auth, email.value, password.value)
     .then((userCredential) => {
@@ -42,6 +56,9 @@ signInWithEmailAndPassword(auth, email.value, password.value)
     });
 })
 
+/**
+ * Adds an event listener to the signup button.
+ */
 signupButton.addEventListener("click", function (event){
     window.location.href = "signup.html";
 });

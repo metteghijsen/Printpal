@@ -1,4 +1,6 @@
-//code om wachtwoord te verbergen en te showen
+/**
+ * Toggles the visibility of the password input.
+ */
 const showPasswordButton = document.getElementById("showPasswordButton");
 const visibilityIcon = document.getElementById("visibility-icon");
 showPasswordButton.addEventListener("click", showPassword);

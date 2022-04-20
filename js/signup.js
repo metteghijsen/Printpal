@@ -1,4 +1,6 @@
-//code om confirmation wachtwoord te verbergen en te showen
+/**
+ * Toggles the visibility of the password confirmation input.
+ */
 const showPasswordButton2 = document.getElementById("showPasswordButton2");
 const visibilityIcon2 = document.getElementById("visibility-icon2");
 showPasswordButton2.addEventListener("click",showPassword2);
