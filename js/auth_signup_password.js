@@ -1,6 +1,3 @@
-// import {initializeApp} from 'firebase/app';
-// import {getAuth, createUserWithEmailAndPassword} from 'firebase/auth';
-
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-app.js";
 import {getAuth, createUserWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/9.1.1/firebase-auth.js";
 
@@ -19,12 +16,9 @@ const auth = getAuth(firebaseApp);
 
 const email = document.getElementById("email");
 const password = document.getElementById("password");
-const submitbutton = document.getElementById("signup-button");
+const signupButton = document.getElementById("signup-button");
 
-const testTextbox = document.getElementById("test");
-
-submitbutton.addEventListener("click", function (event){
-    event.preventDefault();
+signupButton.addEventListener("click", function (event){
     createUserWithEmailAndPassword(auth, email.value, password.value)
         .then((userCredential) => {
             console.log("all good");

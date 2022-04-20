@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51dcc6e6-81f7-431f-a13c-471b16c5d15f" name="Default Changelist" comment="Login en Signup script opgedeeld in aparte bestanden, zo staat deze niet meer bij de serviceworker en bij firebase in een Javascript bestand.">
-      <change afterPath="$PROJECT_DIR$/js/auth_signup_password.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/sendmessage.js" afterDir="false" />
+    <list default="true" id="51dcc6e6-81f7-431f-a13c-471b16c5d15f" name="Default Changelist" comment="Signup formulier gekoppeld aan Firebase. Verschillende Javascript bestanden opgesplitst om errors op te lossen.">
+      <change afterPath="$PROJECT_DIR$/js/auth_login_password.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/pwa.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/signup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/auth_signup_password.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/auth_signup_password.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/signup.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +75,7 @@
       <workItem from="1649330475096" duration="9793000" />
       <workItem from="1649404513907" duration="631000" />
       <workItem from="1649835599616" duration="1152000" />
-      <workItem from="1650353902460" duration="18367000" />
+      <workItem from="1650353902460" duration="20226000" />
     </task>
     <task id="LOCAL-00001" summary="Basis PWA opgezet">
       <created>1649233631368</created>
@@ -195,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650357477247</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Signup formulier gekoppeld aan Firebase. Verschillende Javascript bestanden opgesplitst om errors op te lossen.">
+      <created>1650378635473</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1650378635473</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,6 +230,7 @@
     <MESSAGE value="Ook bij signup form geregeld dat het wachtwoord zichtbaar en onzichtbaar is bij drukken op oog-icoon. Icoon verandert ook." />
     <MESSAGE value="test push" />
     <MESSAGE value="Login en Signup script opgedeeld in aparte bestanden, zo staat deze niet meer bij de serviceworker en bij firebase in een Javascript bestand." />
-    <option name="LAST_COMMIT_MESSAGE" value="Login en Signup script opgedeeld in aparte bestanden, zo staat deze niet meer bij de serviceworker en bij firebase in een Javascript bestand." />
+    <MESSAGE value="Signup formulier gekoppeld aan Firebase. Verschillende Javascript bestanden opgesplitst om errors op te lossen." />
+    <option name="LAST_COMMIT_MESSAGE" value="Signup formulier gekoppeld aan Firebase. Verschillende Javascript bestanden opgesplitst om errors op te lossen." />
   </component>
 </project>

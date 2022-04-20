@@ -20,65 +20,50 @@
 
     <link rel="icon" href="images/printpal512icon.png">
     <title>Printpal</title>
+    <script type="module" src="js/auth_login_password.js"></script>
 
-    <script type="module" src="js/pwa.js"></script>
-    <script type="module" src="js/sendmessage.js"></script>
 </head>
 <body>
 <div class="container">
     <img src="images/printpallogo.png" alt="logo" class="logo">
-        <label class="mdc-text-field messageForm">
-            <span class="mdc-text-field__ripple"></span>
-            <input type="text" class="mdc-text-field__input" aria-labelledby="my-label" id="messageForm">
-            <span class="mdc-floating-label" id="my-label">Type your message</span>
-            <span class="mdc-line-ripple"></span>
-        </label>
 
-        <button class="mdc-button mdc-button--raised mdc-button--leading sendbutton" id="sendbutton">
-            <span class="mdc-button__ripple"></span>
-            <i class="material-icons mdc-button__icon" aria-hidden="true">send</i>
-            <span class="mdc-button__label">Send</span>
+    <form>
+    <div class="mdc-text-field mdc-text-field--with-leading-icon login-textfield textfield">
+        <i class="material-icons mdc-text-field__icon" tabindex="0" role="button">email</i>
+        <input type="email" id="email" class="mdc-text-field__input">
+        <label for="email" class="mdc-floating-label">Email</label>
+        <div class="mdc-line-ripple"></div>
+    </div>
+
+    <div class="mdc-text-field mdc-text-field--with-leading-icon mdc-text-field--with-trailing-icon password-textfield textfield">
+        <i class="material-icons mdc-text-field__icon">lock</i>
+        <input type="password" id="password" class="mdc-text-field__input">
+        <label for="password" class="mdc-floating-label">Password</label>
+        <i class="material-icons mdc-text-field__icon" tabindex="0" role="button" id="showPasswordButton"><span class="material-icons" id="visibility-icon">visibility_off</span></i>
+        <div class="mdc-line-ripple"></div>
+    </div>
+
+    <div class="login-screen-buttons">
+        <button class="mdc-button mdc-button--raised login-button" type="button" id="login-button">
+            <span class="mdc-button__label">Login</span>
         </button>
+
+        <button class="mdc-button mdc-button--outlined signup-button" type="button" id="signup-button">
+            <span class="mdc-button__ripple"></span>
+            <span class="mdc-button__label">Sign up</span>
+        </button>
+    </div>
+    </form>
 </div>
 
+<script src="js/pwa.js"></script>
+<script  src="js/login.js"></script>
 <script src="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.js"></script>
-
 <script>
-    const textField = new mdc.textField.MDCTextField(document.querySelector('.mdc-text-field'));
+    const loginField = new mdc.textField.MDCTextField(document.querySelector('.login-textfield'));
+    const passwordField = new mdc.textField.MDCTextField(document.querySelector('.password-textfield'));
+
     const helperText = new mdc.textField.MDCTextFieldHelperText(document.querySelector('.mdc-text-field-helper-text'));
 </script>
-
-<footer>
-    <!--    <p><b>Printpal ©2022</b><br>Baldur van Helvoirt • Mette Ghijsen • Maarten Kasdorp • Wendela Quist</p>-->
-    <div class="taskbar-icons">
-        <div class="home-icon">
-            <p>
-                <i class="material-icons">home</i>
-            </p>
-        </div>
-        <div class="chat-icon">
-            <p>
-                <i class="material-icons">chat</i>
-            </p>
-        </div>
-        <div class="mdc-touch-target-wrapper">
-            <button class="mdc-fab mdc-fab--mini mdc-fab--touch">
-                <div class="mdc-fab__ripple"></div>
-                <span class="material-icons mdc-fab__icon">add</span>
-                <div class="mdc-fab__touch"></div>
-            </button>
-        </div>
-        <div class="settings-icon">
-            <p>
-                <i class="material-icons">settings</i>
-            </p>
-        </div>
-        <div class="account-icon">
-            <p>
-                <i class="material-icons">account_circle</i>
-            </p>
-        </div>
-    </div>
-</footer>
 </body>
 </html>
