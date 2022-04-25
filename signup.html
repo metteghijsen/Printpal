@@ -30,21 +30,21 @@
   <form>
     <div class="mdc-text-field mdc-text-field--with-leading-icon username-textfield textfield">
       <i class="material-icons mdc-text-field__icon" tabindex="0" role="button">person</i>
-      <input type="text" id="username" class="mdc-text-field__input">
+      <input type="text" id="username" class="mdc-text-field__input" minlength="6" maxlength="30">
       <label for="username" class="mdc-floating-label">Username</label>
       <div class="mdc-line-ripple"></div>
     </div>
 
     <div class="mdc-text-field mdc-text-field--with-leading-icon email-textfield textfield">
       <i class="material-icons mdc-text-field__icon" tabindex="0" role="button">email</i>
-      <input type="text" id="email" class="mdc-text-field__input">
+      <input type="email" id="email" class="mdc-text-field__input">
       <label for="email" class="mdc-floating-label">Email</label>
       <div class="mdc-line-ripple"></div>
     </div>
 
     <div class="mdc-text-field mdc-text-field--with-leading-icon mdc-text-field--with-trailing-icon password-textfield textfield">
       <i class="material-icons mdc-text-field__icon">lock</i>
-      <input type="password" id="password" class="mdc-text-field__input">
+      <input type="password" id="password" class="mdc-text-field__input" minlength="6">
       <label for="password" class="mdc-floating-label">Password</label>
       <i class="material-icons mdc-text-field__icon" tabindex="0" role="button" id="showPasswordButton"><span class="material-icons" id="visibility-icon">visibility_off</span></i>
       <div class="mdc-line-ripple"></div>
@@ -52,11 +52,13 @@
 
     <div class="mdc-text-field mdc-text-field--with-leading-icon mdc-text-field--with-trailing-icon password-confirm-textfield textfield">
       <i class="material-icons mdc-text-field__icon">lock</i>
-      <input type="password" id="password-confirmation" class="mdc-text-field__input" autocomplete="test3">
+      <input type="password" id="password-confirmation" class="mdc-text-field__input" minlength="6">
       <label for="password-confirmation" class="mdc-floating-label">Confirm password</label>
       <i class="material-icons mdc-text-field__icon" tabindex="0" role="button" id="showPasswordButton2"><span class="material-icons" id="visibility-icon2">visibility_off</span></i>
       <div class="mdc-line-ripple"></div>
     </div>
+
+    <p id="error-textfield" class="error-textfield">foutmelding</p>
 
     <div class="login-screen-buttons">
       <button class="mdc-button mdc-button--raised login-button" type="button" id="signup-button">
@@ -76,7 +78,7 @@
   const passwordField = new mdc.textField.MDCTextField(document.querySelector('.password-textfield'));
   const passwordConfirmField = new mdc.textField.MDCTextField(document.querySelector('.password-confirm-textfield'));
 
-  const helperText = new mdc.textField.MDCTextFieldHelperText(document.querySelector('.mdc-text-field-helper-text'));
+  const helperTextEmail = new mdc.textField.MDCTextFieldHelperText(document.querySelector('.mdc-text-field-helper-text'));
 </script>
 </body>
 </html>

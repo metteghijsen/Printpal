@@ -21,9 +21,12 @@ const firebaseApp = initializeApp({
  * @returns {firebase.auth.Auth} The authentication object.
  */
 const auth = getAuth(firebaseApp);
+const username = document.getElementById("username");
 const email = document.getElementById("email");
 const password = document.getElementById("password");
+const passwordConfirmation = document.getElementById("password-confirmation");
 const signupButton = document.getElementById("signup-button");
+const errorTextfield = document.getElementById("error-textfield");
 
 /**
  * Creates a new user with the given email and password.
@@ -31,26 +34,65 @@ const signupButton = document.getElementById("signup-button");
  * @param {string} email - The email of the user.
  * @param {string} password - The password of the user.
  */
+
 signupButton.addEventListener("click", function (event){
-    createUserWithEmailAndPassword(auth, email.value, password.value)
-        .then((userCredential) => {
-            console.log("all good");
+    if(username.value.length < 6){
+        errorTextfield.style.display = "block";
+        errorTextfield.innerHTML = "Username should be longer than 6 characters";
+    }
+    else if(username.value.length > 30){
+        errorTextfield.style.display = "block";
+        errorTextfield.innerHTML = "Username should not be longer than 30 characters";
+    }
+    else{
+        errorTextfield.style.display = "none";
 
-            console.log(email.value);
-            console.log(password.value);
-            // Signed in
-            const user = userCredential.user;
-            // ...
-        })
-        .catch((error) => {
-            console.log("dikke kutzooi");
+        if(password.value === passwordConfirmation.value) {
+            createUserWithEmailAndPassword(auth, email.value, password.value)
+                .then((userCredential) => {
+                    const user = userCredential.user;
+                    errorTextfield.style.display = "none";
+                    window.location.href = "index.html";
+                })
+                .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
 
-            console.log(email.value);
-            console.log(password.value);
-            const errorCode = error.code;
-            const errorMessage = error.message;
-            console.log(errorCode);
-            console.log(errorMessage);
-        });
+                    console.log(errorCode);
+                    console.log(errorMessage);
+
+                    errorTextfield.style.display = "block";
+                    switch (errorCode) {
+                        case "auth/internal-error":
+                            errorTextfield.innerHTML = "An internal server error has occurred. Please try again.";
+                            break;
+                        case "auth/invalid-email":
+                            errorTextfield.innerHTML = "Please enter a valid email address.";
+                            break;
+                        case "auth/email-already-exists":
+                            errorTextfield.innerHTML = "This email address already exists.";
+                            break;
+                        case "auth/email-already-in-use":
+                            errorTextfield.innerHTML = "This email address already exists.";
+                            break;
+                        case "auth/invalid-password":
+                            errorTextfield.innerHTML = "Your password must consist of at least 6 characters.";
+                            break;
+                        case "auth/weak-password":
+                            errorTextfield.innerHTML = "Your password must consist of at least 6 characters.";
+                            break;
+                        case "auth/missing-email":
+                            errorTextfield.innerHTML = "Please enter a email address.";
+                    }
+                });
+        }
+        else{
+            errorTextfield.style.display = "block";
+            errorTextfield.innerHTML = "Passwords don't match.";
+        }
+    }
 })
+
+
+
 

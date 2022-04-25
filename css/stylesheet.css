@@ -119,3 +119,8 @@ footer {
 .signup-button{
   margin: 5px;
 }
+
+.error-textfield{
+  color: var(--mdc-theme-error);
+  display: none;
+}

@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51dcc6e6-81f7-431f-a13c-471b16c5d15f" name="Default Changelist" comment="Inloggen met gegevens uit de database werkend gekregen. Van login pagina de index gemaakt.">
+    <list default="true" id="51dcc6e6-81f7-431f-a13c-471b16c5d15f" name="Default Changelist" comment="Comments toegevoegd">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/auth_login_password.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/auth_login_password.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/auth_signup_password.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/auth_signup_password.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/signup.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +40,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../hypixelstats" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -74,7 +76,13 @@
       <workItem from="1649404513907" duration="631000" />
       <workItem from="1649835599616" duration="1152000" />
       <workItem from="1650353902460" duration="20693000" />
-      <workItem from="1650442881291" duration="752000" />
+      <workItem from="1650442881291" duration="1350000" />
+      <workItem from="1650459217657" duration="80000" />
+      <workItem from="1650459375181" duration="607000" />
+      <workItem from="1650533100906" duration="18000" />
+      <workItem from="1650619013317" duration="1506000" />
+      <workItem from="1650628113790" duration="2093000" />
+      <workItem from="1650875500929" duration="5702000" />
     </task>
     <task id="LOCAL-00001" summary="Basis PWA opgezet">
       <created>1649233631368</created>
@@ -202,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650441729292</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Comments toegevoegd">
+      <created>1650443779185</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1650443779185</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,6 +253,7 @@
     <MESSAGE value="Login en Signup script opgedeeld in aparte bestanden, zo staat deze niet meer bij de serviceworker en bij firebase in een Javascript bestand." />
     <MESSAGE value="Signup formulier gekoppeld aan Firebase. Verschillende Javascript bestanden opgesplitst om errors op te lossen." />
     <MESSAGE value="Inloggen met gegevens uit de database werkend gekregen. Van login pagina de index gemaakt." />
-    <option name="LAST_COMMIT_MESSAGE" value="Inloggen met gegevens uit de database werkend gekregen. Van login pagina de index gemaakt." />
+    <MESSAGE value="Comments toegevoegd" />
+    <option name="LAST_COMMIT_MESSAGE" value="Comments toegevoegd" />
   </component>
 </project>
