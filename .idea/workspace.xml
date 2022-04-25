@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="51dcc6e6-81f7-431f-a13c-471b16c5d15f" name="Default Changelist" comment="Eigenschappen van de database toegevoegd aan HTML">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="tsconfig.json" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="SCSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="27N9TeyJjWuHsKqjc0z00FCWMnW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/images" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Git bestanden\printpal\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\printpal\fonts" />
+      <recent name="C:\xampp\htdocs\Git bestanden\printpal" />
+      <recent name="C:\xampp\htdocs\Git bestanden\printpal\css" />
+      <recent name="C:\xampp\htdocs\Git bestanden\printpal\images" />
+      <recent name="C:\xampp\htdocs\PWA-POC\images" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="51dcc6e6-81f7-431f-a13c-471b16c5d15f" name="Default Changelist" comment="" />
+      <created>1649149686355</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1649149686355</updated>
+      <workItem from="1649149687745" duration="3876000" />
+      <workItem from="1649232899450" duration="508000" />
+      <workItem from="1649330475096" duration="9793000" />
+      <workItem from="1649404513907" duration="4073000" />
+    </task>
+    <task id="LOCAL-00001" summary="Basis PWA opgezet">
+      <created>1649233631368</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1649233631368</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Eigenschappen van basis-PWA aangepast om te matchen met de stijl van Printpal">
+      <created>1649235580663</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1649235580663</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Logo en textbox toegevoegd">
+      <created>1649245149074</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1649245149074</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Material design geïnstalleerd">
+      <created>1649245604417</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1649245604417</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Textbox label error gefixt, design tot nu toe responsive gemaakt">
+      <created>1649341807117</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1649341807117</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Footer gemaakt, kleine foutjes opgeschoond">
+      <created>1649343200070</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1649343200070</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Material theme in proberen te stellen">
+      <created>1649345206644</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1649345206644</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Theming aangepast, textfield probleem proberen op te lossen">
+      <created>1649365254773</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1649365254773</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Eigenschappen van de database toegevoegd aan HTML">
+      <created>1649405246704</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1649405246704</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/login" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Basis PWA opgezet" />
+    <MESSAGE value="Eigenschappen van basis-PWA aangepast om te matchen met de stijl van Printpal" />
+    <MESSAGE value="Logo en textbox toegevoegd" />
+    <MESSAGE value="Material design geïnstalleerd" />
+    <MESSAGE value="Textbox label error gefixt, design tot nu toe responsive gemaakt" />
+    <MESSAGE value="Footer gemaakt, kleine foutjes opgeschoond" />
+    <MESSAGE value="Material theme in proberen te stellen" />
+    <MESSAGE value="Theming aangepast, textfield probleem proberen op te lossen" />
+    <MESSAGE value="Eigenschappen van de database toegevoegd aan HTML" />
+    <option name="LAST_COMMIT_MESSAGE" value="Eigenschappen van de database toegevoegd aan HTML" />
+  </component>
+</project>
