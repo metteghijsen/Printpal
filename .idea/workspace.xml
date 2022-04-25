@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51dcc6e6-81f7-431f-a13c-471b16c5d15f" name="Default Changelist" comment="Comments toegevoegd">
+    <list default="true" id="51dcc6e6-81f7-431f-a13c-471b16c5d15f" name="Default Changelist" comment="Errors bij het aanmaken van een account worden nu getoond op de signup pagina">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylesheet.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/auth_signup_password.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/auth_signup_password.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/signup.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +80,7 @@
       <workItem from="1650533100906" duration="18000" />
       <workItem from="1650619013317" duration="1506000" />
       <workItem from="1650628113790" duration="2093000" />
-      <workItem from="1650875500929" duration="5702000" />
+      <workItem from="1650875500929" duration="6542000" />
     </task>
     <task id="LOCAL-00001" summary="Basis PWA opgezet">
       <created>1649233631368</created>
@@ -217,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650443779185</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Errors bij het aanmaken van een account worden nu getoond op de signup pagina">
+      <created>1650881318903</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1650881318903</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,6 +259,7 @@
     <MESSAGE value="Signup formulier gekoppeld aan Firebase. Verschillende Javascript bestanden opgesplitst om errors op te lossen." />
     <MESSAGE value="Inloggen met gegevens uit de database werkend gekregen. Van login pagina de index gemaakt." />
     <MESSAGE value="Comments toegevoegd" />
-    <option name="LAST_COMMIT_MESSAGE" value="Comments toegevoegd" />
+    <MESSAGE value="Errors bij het aanmaken van een account worden nu getoond op de signup pagina" />
+    <option name="LAST_COMMIT_MESSAGE" value="Errors bij het aanmaken van een account worden nu getoond op de signup pagina" />
   </component>
 </project>

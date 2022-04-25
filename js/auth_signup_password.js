@@ -28,26 +28,38 @@ const passwordConfirmation = document.getElementById("password-confirmation");
 const signupButton = document.getElementById("signup-button");
 const errorTextfield = document.getElementById("error-textfield");
 
-/**
- * Creates a new user with the given email and password.
- * @param {firebase.auth.Auth} auth - The authentication object.
- * @param {string} email - The email of the user.
- * @param {string} password - The password of the user.
- */
-
 signupButton.addEventListener("click", function (event){
+    /**
+     * Checks if the username is shorter than 6 characters.
+     * @param {string} username - the username to check.
+     */
     if(username.value.length < 6){
         errorTextfield.style.display = "block";
         errorTextfield.innerHTML = "Username should be longer than 6 characters";
     }
+    /**
+     * Checks if the username is longer than 30 characters.
+     * @param {string} username - the username to check
+     */
     else if(username.value.length > 30){
         errorTextfield.style.display = "block";
         errorTextfield.innerHTML = "Username should not be longer than 30 characters";
     }
     else{
         errorTextfield.style.display = "none";
-
+        /**
+         * Checks if the password and password confirmation fields are equal.
+         * @param {HTMLInputElement} password - the password field.
+         * @param {HTMLInputElement} passwordConfirmation - the password confirmation field.
+         * @returns {boolean} - true if the password and password confirmation fields are equal.
+         */
         if(password.value === passwordConfirmation.value) {
+            /**
+             * Creates a new user with the given email and password.
+             * @param {firebase.auth.Auth} auth - The firebase auth object.
+             * @param {string} email - The email of the user.
+             * @param {string} password - The password of the user.
+             */
             createUserWithEmailAndPassword(auth, email.value, password.value)
                 .then((userCredential) => {
                     const user = userCredential.user;
@@ -62,6 +74,12 @@ signupButton.addEventListener("click", function (event){
                     console.log(errorMessage);
 
                     errorTextfield.style.display = "block";
+
+                    /**
+                     * A switch statement that maps error codes to their corresponding error messages.
+                     * @param {number} errorCode - the error code to map to its corresponding error message.
+                     * @returns {string} the error message corresponding to the error code.
+                     */
                     switch (errorCode) {
                         case "auth/internal-error":
                             errorTextfield.innerHTML = "An internal server error has occurred. Please try again.";
