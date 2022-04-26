@@ -1,6 +1,6 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-app.js";
-import {getAuth, createUserWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/9.1.1/firebase-auth.js";
-import {sendEmailVerification} from "https://www.gstatic.com/firebasejs/9.1.1/firebase-auth.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-app.js";
+import {getAuth, createUserWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/9.6.11/firebase-auth.js";
+import {sendEmailVerification} from "https://www.gstatic.com/firebasejs/9.6.11/firebase-auth.js";
 
 /**
  * Initializes the Firebase app.

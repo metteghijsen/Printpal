@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51dcc6e6-81f7-431f-a13c-471b16c5d15f" name="Default Changelist" comment="Comments toegevoegd">
+    <list default="true" id="51dcc6e6-81f7-431f-a13c-471b16c5d15f" name="Default Changelist" comment="Errorcodes toegevoegd aan loginscherm, en comments bijgewerkt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylesheet.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/auth_login_password.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/auth_login_password.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/auth_signup_password.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/auth_signup_password.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/signup.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +84,7 @@
       <workItem from="1650619013317" duration="1506000" />
       <workItem from="1650628113790" duration="2093000" />
       <workItem from="1650875500929" duration="8704000" />
-      <workItem from="1650964989901" duration="304000" />
+      <workItem from="1650964989901" duration="4563000" />
     </task>
     <task id="LOCAL-00001" summary="Basis PWA opgezet">
       <created>1649233631368</created>
@@ -233,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650882260736</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Errorcodes toegevoegd aan loginscherm, en comments bijgewerkt">
+      <created>1650965460467</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1650965460467</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,6 +278,7 @@
     <MESSAGE value="Inloggen met gegevens uit de database werkend gekregen. Van login pagina de index gemaakt." />
     <MESSAGE value="Errors bij het aanmaken van een account worden nu getoond op de signup pagina" />
     <MESSAGE value="Comments toegevoegd" />
-    <option name="LAST_COMMIT_MESSAGE" value="Comments toegevoegd" />
+    <MESSAGE value="Errorcodes toegevoegd aan loginscherm, en comments bijgewerkt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Errorcodes toegevoegd aan loginscherm, en comments bijgewerkt" />
   </component>
 </project>
