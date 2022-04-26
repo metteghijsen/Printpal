@@ -25,6 +25,7 @@ const email = document.getElementById("email");
 const password = document.getElementById("password");
 const loginButton = document.getElementById("login-button");
 const signupButton = document.getElementById("signup-button");
+const errorTextfield = document.getElementById("error-textfield");
 
 /**
  * A function that handles the login process.
@@ -36,23 +37,39 @@ loginButton.addEventListener("click", function (event){
 signInWithEmailAndPassword(auth, email.value, password.value)
     .then((userCredential) => {
         // Signed in
-        console.log("all good");
-
-        console.log(email.value);
-        console.log(password.value);
         window.location.href = "home.html";
         const user = userCredential.user;
-        // ...
     })
     .catch((error) => {
-        console.log("werkt niet");
-
-        console.log(email.value);
-        console.log(password.value);
         const errorCode = error.code;
         const errorMessage = error.message;
         console.log(errorCode);
         console.log(errorMessage);
+
+        errorTextfield.style.display = "block";
+
+        /**
+         * A switch statement that maps error codes to their corresponding error messages.
+         * @param {number} errorCode - the error code to map to its corresponding error message.
+         * @returns {string} the error message corresponding to the error code.
+         */
+        switch (errorCode) {
+            case "auth/internal-error":
+                errorTextfield.innerHTML = "An internal server error has occurred. Please try again.";
+                break;
+            case "auth/invalid-email":
+                errorTextfield.innerHTML = "Please enter a valid email address.";
+                break;
+            case "auth/email-already-exists":
+                errorTextfield.innerHTML = "This email address already exists.";
+                break;
+            case "auth/missing-email":
+                errorTextfield.innerHTML = "Please enter a email address.";
+                break;
+            case "auth/user-not-found":
+                errorTextfield.innerHTML = "The provided email address and password do not match."
+                break;
+        }
     });
 })
 

@@ -1,5 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-app.js";
 import {getAuth, createUserWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/9.1.1/firebase-auth.js";
+import {sendEmailVerification} from "https://www.gstatic.com/firebasejs/9.1.1/firebase-auth.js";
 
 /**
  * Initializes the Firebase app.
@@ -64,6 +65,16 @@ signupButton.addEventListener("click", function (event){
                 .then((userCredential) => {
                     const user = userCredential.user;
                     errorTextfield.style.display = "none";
+
+                    /**
+                     * Sends an email verification to the user.
+                     * @param {firebase.User} user - The user to send the verification to.
+                     */
+                    sendEmailVerification(auth.currentUser)
+                        .then(() => {
+                            // Email verification sent
+                        });
+
                     window.location.href = "index.html";
                 })
                 .catch((error) => {
@@ -91,7 +102,7 @@ signupButton.addEventListener("click", function (event){
                             errorTextfield.innerHTML = "This email address already exists.";
                             break;
                         case "auth/email-already-in-use":
-                            errorTextfield.innerHTML = "This email address already exists.";
+                            errorTextfield.innerHTML = "This email address is already in use.";
                             break;
                         case "auth/invalid-password":
                             errorTextfield.innerHTML = "Your password must consist of at least 6 characters.";
@@ -106,7 +117,7 @@ signupButton.addEventListener("click", function (event){
         }
         else{
             errorTextfield.style.display = "block";
-            errorTextfield.innerHTML = "Passwords don't match.";
+            errorTextfield.innerHTML = "Passwords do not match.";
         }
     }
 })
