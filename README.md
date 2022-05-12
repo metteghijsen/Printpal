@@ -1,4 +1,4 @@
-<img src="https://git.fhict.nl/I441782/printpal/-/blob/main/images/printpal_banner.png" width="100%" Height="100%">
+<img src="https://git.fhict.nl/I441782/printpal/-/raw/main/images/printpal_banner.png" width="100%" Height="100%">
 
 
 # PrintPal
