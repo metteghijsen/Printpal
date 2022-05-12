@@ -1,6 +1,10 @@
 # PrintPal
 
-Project "PrintPal", for ProjectB Sogeti.
+The number of young people with depressive symptoms is higher than ever after the corona period. There are queues at psychologists that last for months, and people have to wait a long time before they can go to someone with their problems. To give people a temporary way to talk about their problems, 4 students from Fontys University of Applied Sciences in Eindhoven came up with an innovation: Printpal.
+
+Printpal is an app which combines the virtual and physical word through a single gateway: The printer. Imagine this: you are feeling down, you do not have the energy to move or even get out of bed. All in life is not looking too bright at the moment. Just as you are dreading the day that just started about an hour ago, BAM! Your Printpal printer starts making noise, it starts shaking and then, there it is! A piece of paper with a wonderful message that shines a light on your day, however bright that may be.
+
+The code that is in this repository from the Progressive Web App. This is what a user will use to send data to the printer, and contact other users.
 
 ## Getting started
 
@@ -53,12 +57,6 @@ When you're ready to make this README your own, just edit this file and use the 
 ## Suggestions for a good README
 Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
 
-## Name
-Choose a self-explaining name for your project.
-
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
 ## Badges
 On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
 
@@ -85,7 +83,10 @@ For people who want to make changes to your project, it's helpful to have some d
 You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
 
 ## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+Created by [Mette Ghijsen](https://www.linkedin.com/in/mette-ghijsen-857594203/), [Maarten Kasdorp](https://www.linkedin.com/in/maarten-kasdorp-334020223/), [Baldur van Helvoirt](https://www.linkedin.com/in/baldur-van-helvoirt-55aa45a7/) and [Wendela Quist](https://www.linkedin.com/in/wendela-quist-91b7a020a/).
+
+Thanks to Fontys University of Applied Sciences for making this possible.
+Thanks to Sogeti for letting us participate in the challenge, and helping us come up with great ideas.
 
 ## License
 For open source projects, say how it is licensed.
