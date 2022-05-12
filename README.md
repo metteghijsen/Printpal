@@ -1,5 +1,5 @@
-# PrintPal
 
+# PrintPal
 The number of young people with depressive symptoms is higher than ever after the corona period. There are queues at psychologists that last for months, and people have to wait a long time before they can go to someone with their problems. To give people a temporary way to talk about their problems, 4 students from Fontys University of Applied Sciences in Eindhoven came up with an innovation: Printpal.
 
 Printpal is an app which combines the virtual and physical word through a single gateway: The printer. Imagine this: you are feeling down, you do not have the energy to move or even get out of bed. All in life is not looking too bright at the moment. Just as you are dreading the day that just started about an hour ago, BAM! Your Printpal printer starts making noise, it starts shaking and then, there it is! A piece of paper with a wonderful message that shines a light on your day, however bright that may be.
