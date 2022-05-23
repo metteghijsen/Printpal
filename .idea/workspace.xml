@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51dcc6e6-81f7-431f-a13c-471b16c5d15f" name="Default Changelist" comment="Errorcodes toegevoegd aan loginscherm, en comments bijgewerkt">
+    <list default="true" id="51dcc6e6-81f7-431f-a13c-471b16c5d15f" name="Default Changelist" comment="experimenteren met inloggen met google">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/auth_login_password.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/auth_login_password.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/auth_signup_password.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/auth_signup_password.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +83,8 @@
       <workItem from="1650619013317" duration="1506000" />
       <workItem from="1650628113790" duration="2093000" />
       <workItem from="1650875500929" duration="8704000" />
-      <workItem from="1650964989901" duration="4563000" />
+      <workItem from="1650964989901" duration="6015000" />
+      <workItem from="1653293162738" duration="1042000" />
     </task>
     <task id="LOCAL-00001" summary="Basis PWA opgezet">
       <created>1649233631368</created>
@@ -240,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650965460467</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="experimenteren met inloggen met google">
+      <created>1650970653152</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1650970653152</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,6 +286,7 @@
     <MESSAGE value="Errors bij het aanmaken van een account worden nu getoond op de signup pagina" />
     <MESSAGE value="Comments toegevoegd" />
     <MESSAGE value="Errorcodes toegevoegd aan loginscherm, en comments bijgewerkt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Errorcodes toegevoegd aan loginscherm, en comments bijgewerkt" />
+    <MESSAGE value="experimenteren met inloggen met google" />
+    <option name="LAST_COMMIT_MESSAGE" value="experimenteren met inloggen met google" />
   </component>
 </project>

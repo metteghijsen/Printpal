@@ -11,6 +11,8 @@
   --mdc-theme-surface: #06bfbf !important;
   --mdc-theme-on-surface: #000000 !important;
   --mdc-text-field-icon: #4c4c4c !important;
+
+  --footer-icon-color: B3B3B3;
 }
 
 ::selection {
@@ -28,7 +30,7 @@ body {
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-  background: #2f2f2f;
+  background: var(--colors-background-light);
   background-size: cover;
   font-family: var(--fonts-normal-text);
   font-size: 14px;
@@ -60,11 +62,6 @@ body {
   align-items: center;
 }
 
-/*.container form #fmessage{*/
-/*    width: 400px;*/
-/*    height: 400px;*/
-/*}*/
-
 .messageForm {
   width: 300px;
   margin: 20px 0;
@@ -77,30 +74,11 @@ body {
   display: block;
 }
 
-footer {
-  display: flex;
-  justify-content: center;
-  font-family: Montserrat;
-  font-size: 10px;
 
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #1c1c1c;
-  color: white;
-  text-align: center;
-}
+/*styling van login en signup DONT TOUCH PLS*/
 
 .mdc-text-field .mdc-text-field__input {
   caret-color: #07f2b0 !important;
-}
-
-.taskbar-icons{
-  display: flex;
-  width: 100%;
-  justify-content: space-evenly;
-  flex-direction: row;
 }
 
 .textfield{
@@ -125,43 +103,25 @@ footer {
   display: none;
 }
 
-.google-btn {
-  margin: 5px;
-  width: 184px;
-  height: 42px;
-  background-color: #4285f4;
-  border-radius: 2px;
-  box-shadow: 0 3px 4px 0 rgba(0,0,0,.25);
+/*Navbar styling DONT TOUCH PLS*/
+footer {
+  display: flex;
+  justify-content: center;
+  font-family: Montserrat;
+  font-size: 10px;
+
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--colors-background-light);
+  color: var(--footer-icon-color);
+  text-align: center;
 }
 
-.google-icon-wrapper {
-  position: absolute;
-  margin-top: 1px;
-  margin-left: 1px;
-  width: 40px;
-  height: 40px;
-  border-radius: 2px;
-  background-color: white;
+.taskbar-icons{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-direction: row;
 }
-
-.google-icon {
-  margin-top: 11px;
-  height: 18px;
-}
-
-.btn-text {
-  float: right;
-  margin: 11px 11px 0 0;
-  color: white;
-  font-size: 14px;
-  letter-spacing: 0.2px;
-  font-family: "Roboto", sans-serif;
-}
-
-.google-btn:hover {
-   box-shadow: 0 0 6px #4285f4;
- }
-
-.google-btn:active {
-   background: #1669F2;
- }
