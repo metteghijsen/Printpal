@@ -19,10 +19,12 @@
   background: var(--mdc-theme-secondary);
 }
 
-@font-face {
+/* @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
-}
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 body {
   height: 100%;
@@ -37,24 +39,31 @@ body {
   font-weight: 400;
   color: var(--colors-text-light);
   cursor: default;
+  background-color: #ffffff;
 }
 
 .container {
   width: 100%;
   height: 100%;
-  text-align: center;
-  margin: 0 auto;
+  /* text-align: center; */
+  /* margin: 0 auto; */
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
   flex-direction: column;
   overflow: hidden;
+
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right)
+    env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
-.container .logo {
+/* .container .logo {
   height: 7vh;
   margin: 30px;
-}
+} */
 
 .container form {
   display: flex;
@@ -124,4 +133,90 @@ footer {
   width: 100%;
   justify-content: space-evenly;
   flex-direction: row;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.header {
+  width: 100%;
+  height: 10vh;
+  /* padding-left: 20px; */
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header img {
+  width: 100px;
+}
+
+.profileavatar {
+  width: 12vw;
+  height: 12vw;
+  border-radius: 50%;
+  background-color: #06bfbf;
+}
+
+.titletext h1 {
+  font-family: Montserrat;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+#historysection h2 {
+  font-family: Montserrat;
+  font-size: 1.3rem;
+}
+
+.cardcontainer {
+  /* padding-top: 20px; */
+}
+
+.card {
+  display: grid;
+  /* column-gap: 50px; */
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  /* background-color: #e2e2e2; */
+  border-radius: 20px;
+  margin: 0px;
+  box-shadow: 0px 0px 34px 0px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2vh;
+}
+
+.card h3 {
+  font-family: Montserrat;
+  font-size: 1.2rem;
+  color: #08f2b0;
+  margin: 0;
+  margin-bottom: 5px;
+  font-weight: 900;
+}
+
+.card p {
+  font-family: Montserrat;
+  font-size: 1rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+.card img {
+  width: 50px;
+}
+
+.green {
+  color: #08f2b0;
 }
