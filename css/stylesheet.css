@@ -1,7 +1,7 @@
 :root {
   --colors-background-dark: #2d2d2d;
   --colors-background-light: #ffff;
-  --colors-text-light: #fff;
+  --colors-text-light: #4c4c4c;
   --colors-text-highlight: #4c4c4c;
   --colors-text-dark: #000;
   --fonts-normal-text: arial, verdana;
@@ -10,6 +10,9 @@
   --mdc-theme-on-primary: #ffffff !important;
   --mdc-theme-surface: #06bfbf !important;
   --mdc-theme-on-surface: #000000 !important;
+  --mdc-text-field-icon: #4c4c4c !important;
+
+  --footer-icon-color: B3B3B3;
 }
 
 ::selection {
@@ -27,12 +30,13 @@ body {
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-  background: #2f2f2f;
+  background: var(--colors-background-light);
   background-size: cover;
   font-family: var(--fonts-normal-text);
   font-size: 14px;
   font-weight: 400;
   color: var(--colors-text-light);
+  cursor: default;
 }
 
 .container {
@@ -70,6 +74,35 @@ body {
   display: block;
 }
 
+/*styling van login en signup DONT TOUCH PLS*/
+
+.mdc-text-field .mdc-text-field__input {
+  caret-color: #07f2b0 !important;
+}
+
+.textfield {
+  width: 300px;
+  margin: 10px;
+}
+
+.login-screen-buttons {
+  display: flex;
+}
+
+.login-button {
+  margin: 5px;
+}
+
+.signup-button {
+  margin: 5px;
+}
+
+.error-textfield {
+  color: var(--mdc-theme-error);
+  display: none;
+}
+
+/*Navbar styling DONT TOUCH PLS*/
 footer {
   display: flex;
   justify-content: center;
@@ -81,16 +114,12 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #1c1c1c;
-  color: white;
+  background-color: var(--colors-background-light);
+  color: var(--footer-icon-color);
   text-align: center;
 }
 
-.mdc-text-field .mdc-text-field__input {
-  caret-color: #07f2b0 !important;
-}
-
-.taskbar-icons{
+.taskbar-icons {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
