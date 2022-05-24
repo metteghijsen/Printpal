@@ -5,6 +5,7 @@
   --colors-text-highlight: #4c4c4c;
   --colors-text-dark: #000;
   --fonts-normal-text: arial, verdana;
+  --colors-subtext: #949494;
 
   --mdc-theme-primary: #07f2b0 !important;
   --mdc-theme-on-primary: #ffffff !important;
@@ -16,12 +17,22 @@
 }
 
 ::selection {
-  background: var(--mdc-theme-secondary);
+  background: var(--mdc-theme-surface);
 }
 
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url("../fonts/Montserrat-Medium.ttf") format("truetype");
 }
 
 body {
@@ -124,4 +135,82 @@ footer {
   width: 100%;
   justify-content: space-evenly;
   flex-direction: row;
+}
+
+/*Profile styling*/
+
+.gradient{
+  background: linear-gradient(180deg, var(--mdc-theme-primary) 0%, var(--mdc-theme-surface) 100%);
+  width: 100%;
+  height: 50vh;
+  z-index: 0;
+}
+
+.white-background{
+  background-color: var(--colors-background-light);
+  width: 100%;
+  height: 50vh;
+  z-index: 1;
+  position: absolute;
+  top: 20vh;
+  border-radius: 12%;
+}
+
+.profile-icon{
+  z-index: 2;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  border: 4px solid var(--mdc-theme-surface);
+  top: 10vh;
+}
+
+.username h1{
+  font-family: Montserrat-Bold, sans-serif;
+  font-size: 32px;
+  text-align: center;
+  color: var(--colors-text-light);
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+}
+
+.status-message p{
+  color: var(--colors-subtext);
+  font-family: Montserrat-Medium, sans-serif;
+  font-size: 13px;
+  margin-top: -2vh;
+}
+
+.stats{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.stats h1{
+  font-family: Montserrat-Bold, sans-serif;
+  font-size: 24px;
+  text-align: center;
+  color: var(--colors-text-light);
+  margin: 1vh 0 0 0;
+}
+
+.stats p{
+  color: var(--colors-subtext);
+  font-family: Montserrat-Medium, sans-serif;
+  font-size: 13px;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  background: linear-gradient(90deg, var(--mdc-theme-primary) 0%, var(--mdc-theme-surface) 100%);
+  font-family: Montserrat-Bold, sans-serif;
+  font-size: 17px;
+  color: var(--colors-background-light);
+  border-radius: 30px;
+  padding: 10px 60px 10px 60px;
+  display: inline-block;
+  margin-top: 3vh;
 }
