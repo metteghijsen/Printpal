@@ -298,3 +298,29 @@ h2{
   text-align: center;
   margin: 0;
 }
+
+.back-btn{
+  position: absolute;
+  top: 3vh;
+  left: 3vh;
+  z-index: 2;
+  text-decoration: none;
+  color: var(--colors-text-light);
+}
+
+.back-btn span{
+  font-size: 2em;
+}
+
+.settings-btn{
+  position: absolute;
+  top: 3vh;
+  right: 3vh;
+  z-index: 2;
+  text-decoration: none;
+  color: var(--colors-text-light);
+}
+
+.settings-btn span{
+  font-size: 2em;
+}
