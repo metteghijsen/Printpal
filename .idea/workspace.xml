@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51dcc6e6-81f7-431f-a13c-471b16c5d15f" name="Default Changelist" comment="Eerste opzet profielpagina gemaakt">
+    <list default="true" id="51dcc6e6-81f7-431f-a13c-471b16c5d15f" name="Default Changelist" comment="Eerste opzet voor achievements toegevoegd aan profiel">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylesheet.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/profile.html" afterDir="false" />
@@ -267,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653394749506</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Eerste opzet voor achievements toegevoegd aan profiel">
+      <created>1653405210576</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1653405210576</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,6 +326,7 @@
     <MESSAGE value="Errorcodes toegevoegd aan loginscherm, en comments bijgewerkt" />
     <MESSAGE value="experimenteren met inloggen met google" />
     <MESSAGE value="Eerste opzet profielpagina gemaakt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Eerste opzet profielpagina gemaakt" />
+    <MESSAGE value="Eerste opzet voor achievements toegevoegd aan profiel" />
+    <option name="LAST_COMMIT_MESSAGE" value="Eerste opzet voor achievements toegevoegd aan profiel" />
   </component>
 </project>

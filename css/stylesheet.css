@@ -224,26 +224,77 @@ h2{
 
 .achievements-container{
   height: 20vh;
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
+  width: 92%;
   margin: 30px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
 }
 
 .achievement{
   width: 150px;
   height: 150px;
-  filter: drop-shadow(0 4px 18px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(0 4px 7px rgba(0, 0, 0, 0.2));
   background-color: var(--colors-background-light);
   border-radius: 30px;
+  display: inline-block;
+  margin: 5px;
+  overflow: hidden;
+}
+
+.achievement-icon-container{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  width: 150px;
+  height: 150px;
+  position: absolute;
 }
 
 .achievement-icon{
   width: 82px;
   height: 82px;
   border-radius: 50%;
-  background-color: #B682F6;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newbie{
+  background-color: #487eff;
+}
+
+.timetracer{
+  background-color: #ffa45a;
+}
+
+.artist{
+  background-color: #f1287c;
+}
+
+.a-new-friend{
+  background-color: #2bbc66;
+}
+
+.achievement-icon i{
+  color: var(--colors-background-light);
+  font-size: 3em;
+}
+
+.achievement-icon-container h1{
+  color: var(--colors-text-light);
+  font-size: 15px;
+  font-family: Montserrat-Bold, sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+.achievement-icon-container p {
+  font-family: Montserrat, sans-serif;
+  font-size: 9px;
+  color: var(--colors-subtext);
+  text-align: center;
+  margin: 0;
 }
