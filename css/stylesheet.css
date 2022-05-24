@@ -140,9 +140,9 @@ footer {
 /*Profile styling*/
 
 .gradient{
-  background: linear-gradient(180deg, var(--mdc-theme-primary) 0%, var(--mdc-theme-surface) 100%);
+  background: linear-gradient(180deg, var(--mdc-theme-primary) 0%, var(--mdc-theme-surface) 80%);
   width: 100%;
-  height: 50vh;
+  height: 26vh;
   z-index: 0;
 }
 
@@ -203,7 +203,7 @@ footer {
   margin: 0;
 }
 
-a{
+.edit-profile-btn{
   text-decoration: none;
   background: linear-gradient(90deg, var(--mdc-theme-primary) 0%, var(--mdc-theme-surface) 100%);
   font-family: Montserrat-Bold, sans-serif;
@@ -213,4 +213,37 @@ a{
   padding: 10px 60px 10px 60px;
   display: inline-block;
   margin-top: 3vh;
+}
+
+h2{
+  font-family: Montserrat, sans-serif;
+  font-size: 24px;
+  display: flex;
+  margin: 7vh 0 0 30px;
+}
+
+.achievements-container{
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 30px;
+}
+
+.achievement{
+  width: 150px;
+  height: 150px;
+  filter: drop-shadow(0 4px 18px rgba(0, 0, 0, 0.2));
+  background-color: var(--colors-background-light);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.achievement-icon{
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  background-color: #B682F6;
 }
