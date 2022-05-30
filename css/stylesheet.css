@@ -42,6 +42,11 @@ body {
   background-color: #ffffff;
 }
 
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */}
+  
+
 .container {
   width: 100%;
   height: 100%;
@@ -64,6 +69,20 @@ body {
   height: 7vh;
   margin: 30px;
 } */
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+.material-icons.gradient { background: linear-gradient(180deg, #08F2B0 0%, #08F2B0 0.01%, rgba(8, 242, 176, 0.973958) 2.6%, #06BFBF 100%); }
+
 
 .container form {
   display: flex;
@@ -166,8 +185,9 @@ footer {
 
 .titletext h1 {
   font-family: Montserrat;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 500;
+  margin-bottom: 4vh;
 }
 
 .bold {
@@ -177,6 +197,7 @@ footer {
 #historysection h2 {
   font-family: Montserrat;
   font-size: 1.3rem;
+  margin-bottom: 5vh;
 }
 
 .cardcontainer {
@@ -186,14 +207,14 @@ footer {
 .card {
   display: grid;
   /* column-gap: 50px; */
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1.5fr 4fr 1fr;
   align-items: center;
   width: 100%;
   height: 10vh;
   /* background-color: #e2e2e2; */
-  border-radius: 20px;
+  border-radius: 15px;
   margin: 0px;
-  box-shadow: 0px 0px 34px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 1px 18px 4px rgba(0, 0, 0, 0.04);
   margin-bottom: 2vh;
 }
 
@@ -215,8 +236,37 @@ footer {
 
 .card img {
   width: 50px;
+  padding: 20px;
 }
 
 .green {
   color: #08f2b0;
 }
+
+.printbutton {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  /* justify-content: center; */
+  align-items: center;
+  width: 100%;
+  height: 12vh;
+  border-radius: 30px;
+  margin: 0px;
+  background: linear-gradient(136.5deg, rgba(8, 242, 176, 0.973958) 2.11%, #06BFBF 97.75%);
+  box-shadow: 0px 4px 18px 1px rgba(0, 0, 0, 0.08);}
+
+  .printbutton h3 {
+    font-family: Montserrat;
+    font-size: 1.2rem;
+    margin: 0;
+    font-weight: 700;
+    color: #ffffff;
+  }
+  
+  .printbutton i {
+    padding: 20px;
+  }
+
+  #introsection {
+    height: 30vh;
+  }
