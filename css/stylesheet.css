@@ -356,17 +356,22 @@ h2{
   flex-direction: column;
 }
 
+.settings-container a{
+  text-decoration: none;
+  color: #50555C;
+}
+
 .setting{
   display: flex;
   align-items: center;
   flex-direction: row;
 }
 
-.subtitle h2{
+.settings-container .subtitle h2{
   font-family: Montserrat Regular, sans-serif;
   font-size: 12px;
   text-align: center;
-  color: #b3b3b3;
+  color: #b3b3b3 !important;
   height: 2vh;
   margin: 0;
 }
@@ -375,7 +380,7 @@ h2{
   font-family: Montserrat Regular, sans-serif;
   font-size: 12px;
   text-align: center;
-  color: var(--colors-text-light);
+  color: #50555C !important;
 }
 
 .setting .icon{
@@ -390,4 +395,63 @@ h2{
 
 .subtitle{
   margin: 2vh 0 1vh 0;
+}
+
+/*Preferences screen*/
+.preferences-container{
+  height: 90vh;
+  text-align: center;
+  margin: 18vh 25px 0 25px;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.preferences-container .subtitle h2{
+  font-family: Montserrat-Bold, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: var(--mdc-theme-primary) !important;
+  height: 2vh;
+  margin: 0;
+}
+
+.preferences-container .subtitle p{
+  font-family: Montserrat Regular, sans-serif;
+  font-size: 12px;
+  text-align: left;
+  color: #50555C !important;
+  height: 2vh;
+  margin: 1vh 0 0 0;
+}
+
+.categories{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.category{
+  border: 3px solid var(--mdc-theme-primary);
+  background-color: var(--colors-background-light);
+  border-radius: 100px;
+  height: 4.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.category p{
+  font-family: Montserrat Regular, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  color: #b3b3b3;
+  padding: 0 25px 0 25px;
+}
+
+.category-clicked{
+  background-color: var(--mdc-theme-primary);
+}
+
+.category-clicked p{
+  color: var(--colors-background-light);
 }
