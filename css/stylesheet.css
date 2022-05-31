@@ -422,7 +422,7 @@ h2{
   text-align: left;
   color: #50555C !important;
   height: 2vh;
-  margin: 1vh 0 0 0;
+  margin: 1vh 0 1vh 0;
 }
 
 .categories{
@@ -431,17 +431,19 @@ h2{
 }
 
 .category{
-  border: 3px solid var(--mdc-theme-primary);
+  border: 1px solid var(--mdc-theme-primary);
   background-color: var(--colors-background-light);
   border-radius: 100px;
-  height: 4.5vh;
+  height: 4vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  white-space: nowrap;
+  margin: 1vh 5px 0 0;
 }
 
 .category p{
-  font-family: Montserrat Regular, sans-serif;
+  font-family: Montserrat-Medium, sans-serif;
   font-size: 14px;
   text-align: center;
   color: #b3b3b3;
@@ -454,4 +456,42 @@ h2{
 
 .category-clicked p{
   color: var(--colors-background-light);
+}
+
+.time-form{
+  margin: 0 0 2vh 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.submit-time-btn{
+  text-decoration: none;
+  background: var(--mdc-theme-primary);
+  font-family: Montserrat-Medium, sans-serif;
+  font-size: 14px;
+  color: var(--colors-background-light);
+  border-radius: 100px;
+  padding: 0 25px 0 25px;
+  margin: 0 0 0 10px;
+  height: 4vh;
+  display: inline-block;
+  border: none;
+}
+
+input[type="time"]{
+  border: none;
+  color: var(--mdc-theme-primary);
+  font-family: Montserrat Regular, sans-serif;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  width: 90px;
+  height: 33px;
+}
+
+input[type="time" i]{
+  text-align: center;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+  margin: 10px 0 10px 0;
 }
