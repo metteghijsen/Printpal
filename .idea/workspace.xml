@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51dcc6e6-81f7-431f-a13c-471b16c5d15f" name="Default Changelist" comment="Settings scherm afgemaakt">
+    <list default="true" id="51dcc6e6-81f7-431f-a13c-471b16c5d15f" name="Default Changelist" comment="Preferences scherm afgemaakt.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylesheet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/preferences.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/preferences.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/preferences.html" beforeDir="false" afterPath="$PROJECT_DIR$/preferences.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/profile.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,6 +110,7 @@
       <workItem from="1650964989901" duration="6015000" />
       <workItem from="1653293162738" duration="1042000" />
       <workItem from="1653896754948" duration="7907000" />
+      <workItem from="1653999578563" duration="329000" />
     </task>
     <task id="LOCAL-00001" summary="Basis PWA opgezet">
       <created>1649233631368</created>
@@ -302,7 +301,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653901858836</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Preferences scherm afgemaakt.">
+      <created>1653991828487</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1653991828487</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -332,7 +338,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Basis PWA opgezet" />
     <MESSAGE value="Eigenschappen van basis-PWA aangepast om te matchen met de stijl van Printpal" />
     <MESSAGE value="Logo en textbox toegevoegd" />
     <MESSAGE value="Material design geïnstalleerd" />
@@ -357,6 +362,7 @@
     <MESSAGE value="Eerste opzet voor achievements toegevoegd aan profiel" />
     <MESSAGE value="Achievements op profiel afgemaakt" />
     <MESSAGE value="Settings scherm afgemaakt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Settings scherm afgemaakt" />
+    <MESSAGE value="Preferences scherm afgemaakt." />
+    <option name="LAST_COMMIT_MESSAGE" value="Preferences scherm afgemaakt." />
   </component>
 </project>

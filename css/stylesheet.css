@@ -464,18 +464,17 @@ h2{
   justify-content: flex-start;
 }
 
-.submit-time-btn{
+.save-preferences-btn{
   text-decoration: none;
-  background: var(--mdc-theme-primary);
-  font-family: Montserrat-Medium, sans-serif;
-  font-size: 14px;
+  background: linear-gradient(90deg, var(--mdc-theme-primary) 0%, var(--mdc-theme-surface) 100%);
+  font-family: Montserrat-Bold, sans-serif;
+  font-size: 17px;
   color: var(--colors-background-light);
-  border-radius: 100px;
-  padding: 0 25px 0 25px;
-  margin: 0 0 0 10px;
-  height: 4vh;
+  border-radius: 30px;
+  padding: 10px 0 10px 0;
   display: inline-block;
-  border: none;
+  margin-top: 6vh;
+  width: 26vh;
 }
 
 input[type="time"]{
@@ -494,4 +493,9 @@ input[type="time" i]{
 
 input[type="time"]::-webkit-calendar-picker-indicator {
   margin: 10px 0 10px 0;
+}
+
+.btn-save-wrapper{
+  display: flex;
+  justify-content: center;
 }
