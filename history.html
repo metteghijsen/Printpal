@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    viewport-fit="cover" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="css/stylesheet.css" type="text/css" />
+  <!--    Bootstrap icons inladen-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+
+  <!--    Google icons inladen-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+  <!--    Material inladen-->
+  <link rel="stylesheet" href="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.css" />
+
+  <!--Manifest inladen voor PWA-->
+  <link rel="manifest" href="manifest.json" />
+
+  <link rel="icon" href="images/printpal512icon.png" />
+  <title>Printpal</title>
+
+  <script type="module" src="js/pwa.js"></script>
+  <script type="module" src="js/sendmessage.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="left">
+        <a href="home.html"><span class="material-icons">
+            arrow_back_ios
+            </span>   </a>   </div>
+      <a href="profilepage.html">
+    </div>
+    </a>
+
+    <div class="titletext">
+        <h1>History</h1>
+      </div>
+
+    <section id="history">
+        <div class="historylist">
+            <div class="card">
+                <div class="grid-item"><img src="images/avatar.png" /></div>
+                <div class="grid-item">
+                  <h3>Motivational</h3>
+                  <p>Laura Lopez</p>
+                </div>
+                <div class="grid-item">
+                  <p>18:35</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="grid-item"><img src="images/avatar.png" /></div>
+                <div class="grid-item">
+                  <h3>Motivational</h3>
+                  <p>Laura Lopez</p>
+                </div>
+                <div class="grid-item">
+                  <p>18:35</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="grid-item"><img src="images/avatar.png" /></div>
+                <div class="grid-item">
+                  <h3>Motivational</h3>
+                  <p>Laura Lopez</p>
+                </div>
+                <div class="grid-item">
+                  <p>18:35</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="grid-item"><img src="images/avatar.png" /></div>
+                <div class="grid-item">
+                  <h3>Motivational</h3>
+                  <p>Laura Lopez</p>
+                </div>
+                <div class="grid-item">
+                  <p>18:35</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="grid-item"><img src="images/avatar.png" /></div>
+                <div class="grid-item">
+                  <h3>Motivational</h3>
+                  <p>Laura Lopez</p>
+                </div>
+                <div class="grid-item">
+                  <p>18:35</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="grid-item"><img src="images/avatar.png" /></div>
+                <div class="grid-item">
+                  <h3>Motivational</h3>
+                  <p>Laura Lopez</p>
+                </div>
+                <div class="grid-item">
+                  <p>18:35</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="grid-item"><img src="images/avatar.png" /></div>
+                <div class="grid-item">
+                  <h3>Motivational</h3>
+                  <p>Laura Lopez</p>
+                </div>
+                <div class="grid-item">
+                  <p>18:35</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="grid-item"><img src="images/avatar.png" /></div>
+                <div class="grid-item">
+                  <h3>Motivational</h3>
+                  <p>Laura Lopez</p>
+                </div>
+                <div class="grid-item">
+                  <p>18:35</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="grid-item"><img src="images/avatar.png" /></div>
+                <div class="grid-item">
+                  <h3>Motivational</h3>
+                  <p>Laura Lopez</p>
+                </div>
+                <div class="grid-item">
+                  <p>18:35</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="grid-item"><img src="images/avatar.png" /></div>
+                <div class="grid-item">
+                  <h3>Motivational</h3>
+                  <p>Laura Lopez</p>
+                </div>
+                <div class="grid-item">
+                  <p>18:35</p>
+                </div>
+              </div>
+        </div>
+    </section>
+
+
+  <footer>
+    <div class="taskbar-icons">
+      <div class="home-icon">
+        <p>
+          <i class="material-icons">home</i>
+        </p>
+      </div>
+      <div class="mdc-touch-target-wrapper">
+        <button class="mdc-fab mdc-fab--mini mdc-fab--touch">
+          <div class="mdc-fab__ripple"></div>
+          <span class="material-icons  mdc-fab__icon">add</span>
+          <div class="mdc-fab__touch"></div>
+        </button>
+      </div>
+      <div class="chat-icon">
+        <p>
+          <i class="material-icons">chat</i>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.js"></script>
+
+  <script>
+    const textField = new mdc.textField.MDCTextField(
+      document.querySelector(".mdc-text-field")
+    );
+    const helperText = new mdc.textField.MDCTextFieldHelperText(
+      document.querySelector(".mdc-text-field-helper-text")
+    );
+  </script>
+</body>
+
+</html>
