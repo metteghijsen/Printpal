@@ -26,13 +26,17 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+html {
+  background-color: #ffffff !important;
+}
+
 body {
   height: 100%;
   width: 100%;
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-  background: var(--colors-background-light);
+  /* background: var(--colors-background-light); */
   background-size: cover;
   font-family: var(--fonts-normal-text);
   font-size: 14px;
@@ -165,16 +169,18 @@ footer {
   display: flex;
   justify-content: center;
   font-family: Montserrat;
+  font-style: normal;
   font-size: 10px;
   height: 5%;
 
   position: fixed;
   left: 0;
-  bottom: 0;
+  /* bottom: 0; */
   width: 100%;
   background-color: var(--colors-background-light);
   color: var(--footer-icon-color);
   text-align: center;
+  bottom: calc(1rem + env(safe-area-inset-bottom));
 }
 
 .taskbar-icons {
@@ -215,6 +221,7 @@ footer {
 
 .titletext h1 {
   font-family: Montserrat;
+  font-style: normal;
   font-size: 2.5rem;
   font-weight: 500;
   margin-bottom: 4vh;
@@ -226,6 +233,7 @@ footer {
 
 #historysection h2 {
   font-family: Montserrat;
+  font-style: normal;
   font-size: 1.3rem;
   margin-bottom: 5vh;
 }
@@ -250,6 +258,7 @@ footer {
 
 .card h3 {
   font-family: Montserrat;
+  font-style: bold;
   font-size: 1.2rem;
   color: #08f2b0;
   margin: 0;
@@ -259,6 +268,7 @@ footer {
 
 .card p {
   font-family: Montserrat;
+  font-style: normal;
   font-size: 1rem;
   margin: 0;
   font-weight: 500;
@@ -292,6 +302,7 @@ footer {
 
 .printbutton h3 {
   font-family: Montserrat;
+  font-style: normal;
   font-size: 1.2rem;
   margin: 0;
   font-weight: 700;
@@ -326,6 +337,7 @@ footer {
 
 .newprintscontent h2 {
   font-family: Montserrat;
+  font-style: normal;
   font-size: 1.2rem;
   margin: 5vh;
   font-weight: 500;
@@ -349,6 +361,7 @@ footer {
 
 .printcard {
   font-family: Montserrat;
+  font-style: normal;
   padding: 20px;
   width: 75vw;
   height: 500px;
