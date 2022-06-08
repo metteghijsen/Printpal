@@ -1,0 +1,45 @@
+/*chat section*/
+.profilePicture {
+    width: 50px;
+    height: 50px;
+    margin: 0 26px 0 26px;
+}
+
+.nameContainer {
+    height: 100%;
+    width: 100%;
+    border-bottom: 1px solid rgba(102, 106, 112, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.name h2 {
+    margin: 0;
+    text-align: left;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--mdc-theme-primary);
+}
+
+.name p {
+    margin: 0;
+    text-align: left;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.timeStamp {
+    position: absolute;
+    right: 20px;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    height: 97px;
+    left: 0px;
+    bottom: 0;
+    background: #FFFFFF;
+}
+
+/* End chat section*/
