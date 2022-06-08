@@ -1,109 +1,123 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
-  <!--    Bootstrap icons inladen-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/stylesheet.css" type="text/css" />
+    <!--    Bootstrap icons inladen-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
 
-  <!--    Google icons inladen-->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!--    Google icons inladen-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
 
-  <!--    Material inladen-->
-  <link rel="stylesheet" href="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.css">
+    <!--    Material inladen-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.css"
+    />
 
-  <!--Manifest inladen voor PWA-->
-  <link rel="manifest" href="manifest.json">
+    <!--Manifest inladen voor PWA-->
+    <link rel="manifest" href="manifest.json" />
 
-  <link rel="icon" href="images/printpal512icon.png">
-  <title>Printpal</title>
+    <link rel="icon" href="images/printpal512icon.png" />
+    <title>Printpal</title>
 
-  <script type="module" src="js/pwa.js"></script>
-</head>
-<body>
-<a href="settings.html" class="back-btn">
-  <span class="material-icons">arrow_back_ios_new</span>
-</a>
+    <script type="module" src="js/pwa.js"></script>
+  </head>
+  <body>
+    <a href="settings.html" class="back-btn">
+      <span class="material-icons">arrow_back_ios_new</span>
+    </a>
 
-<div class="title">
-  <h1>Preferences</h1>
-</div>
-
-<div class="preferences-container">
-  <div class="subtitle">
-    <h2>Time</h2>
-    <p>Edit the time when you would like to recieve
-      messages.</p>
-  </div>
-
-  <div class="time-form">
-    <form action="">
-      <input type="time" id="appt" name="appt">
-    </form>
-  </div>
-
-  <div class="line"></div>
-
-  <div class="subtitle">
-    <h2>Category</h2>
-    <p>Edit the category in which you would like
-      to receive messages.</p>
-  </div>
-
-  <div class="categories">
-    <div class="category" id="category-item-1">
-      <p>Motivation</p>
+    <div class="title">
+      <h1>Preferences</h1>
     </div>
 
-    <div class="category" id="category-item-2">
-      <p>Vent</p>
+    <div class="preferences-container">
+      <div class="subtitle">
+        <h2>Time</h2>
+        <p>Edit the time when you would like to recieve messages.</p>
+      </div>
+
+      <div class="time-form">
+        <form action="">
+          <input type="time" id="appt" name="appt" />
+        </form>
+      </div>
+
+      <div class="line"></div>
+
+      <div class="subtitle">
+        <h2>Category</h2>
+        <p>Edit the category in which you would like to receive messages.</p>
+      </div>
+
+      <div class="categories">
+        <div class="category" id="category-item-1">
+          <p>Motivation</p>
+        </div>
+
+        <div class="category" id="category-item-2">
+          <p>Vent</p>
+        </div>
+
+        <div class="category" id="category-item-3">
+          <p>Meme</p>
+        </div>
+      </div>
+
+      <div class="categories">
+        <div class="category" id="category-item-4">
+          <p>Nice message</p>
+        </div>
+
+        <div class="category" id="category-item-5">
+          <p>Storytime</p>
+        </div>
+      </div>
+
+      <div class="btn-save-wrapper">
+        <a href="settings.html" class="save-preferences-btn"
+          >Save preferences</a
+        >
+      </div>
     </div>
 
-    <div class="category" id="category-item-3">
-      <p>Meme</p>
-    </div>
-  </div>
-
-  <div class="categories">
-    <div class="category" id="category-item-4">
-      <p>Nice message</p>
-    </div>
-
-    <div class="category" id="category-item-5">
-      <p>Storytime</p>
-    </div>
-  </div>
-
-  <div class="btn-save-wrapper">
-  <a href="settings.html" class="save-preferences-btn">Save preferences</a>
-  </div>
-</div>
-
-<!--Navbar-->
-<footer>
-  <div class="taskbar-icons">
-    <div class="home-icon">
-      <p>
-        <i class="material-icons">home</i>
-      </p>
-    </div>
-    <div class="mdc-touch-target-wrapper">
-      <button class="mdc-fab mdc-fab--mini mdc-fab--touch">
-        <div class="mdc-fab__ripple"></div>
-        <span class="material-icons mdc-fab__icon">add</span>
-        <div class="mdc-fab__touch"></div>
-      </button>
-    </div>
-    <div class="chat-icon">
-      <p>
-        <i class="material-icons">chat</i>
-      </p>
-    </div>
-  </div>
-</footer>
-<script src="js/preferences.js"></script>
-</body>
+    <!--Navbar-->
+    <footer>
+      <div class="taskbar-icons">
+        <div class="home-icon">
+          <p>
+            <i class="material-icons">home</i>
+          </p>
+        </div>
+        <div class="mdc-touch-target-wrapper">
+          <button
+            class="mdc-fab mdc-fab--mini mdc-fab--touch"
+            style="background: linear-gradient(90deg, #07f2b0 0%, #06bfbf 100%)"
+          >
+            <div class="mdc-fab__ripple"></div>
+            <span class="material-icons mdc-fab__icon">add</span>
+            <div class="mdc-fab__touch"></div>
+          </button>
+        </div>
+        <div class="chat-icon">
+          <p>
+            <i class="material-icons">chat</i>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/preferences.js"></script>
+  </body>
 </html>

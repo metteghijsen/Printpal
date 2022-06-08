@@ -649,7 +649,7 @@ footer {
 .settings-container .subtitle h2 {
   font-family: Montserrat Regular, sans-serif;
   font-size: 12px;
-  text-align: center;
+  /* text-align: center; */
   color: #b3b3b3 !important;
   height: 2vh;
   margin: 0;
