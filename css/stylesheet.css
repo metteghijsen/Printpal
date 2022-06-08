@@ -5,8 +5,10 @@
   --colors-text-highlight: #4c4c4c;
   --colors-text-dark: #000;
   --fonts-normal-text: arial, verdana;
+  --colors-subtext: #949494;
 
   --mdc-theme-primary: #07f2b0 !important;
+  /* --mdc-theme-secondary: #029342 !important; */
   --mdc-theme-on-primary: #ffffff !important;
   --mdc-theme-surface: #06bfbf !important;
   --mdc-theme-on-surface: #000000 !important;
@@ -16,7 +18,7 @@
 }
 
 ::selection {
-  background: var(--mdc-theme-secondary);
+  background: var(--mdc-theme-surface);
 }
 
 /* @font-face {
@@ -28,6 +30,16 @@
 
 html {
   background-color: #ffffff !important;
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url("../fonts/Montserrat-Medium.ttf") format("truetype");
 }
 
 body {
@@ -395,4 +407,378 @@ footer {
   overflow: auto;
   white-space: nowrap;
   height: 100vh;
+}
+/*Profile screen*/
+.profile-container {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.gradient {
+  background: linear-gradient(
+    180deg,
+    var(--mdc-theme-primary) 0%,
+    var(--mdc-theme-surface) 80%
+  );
+  width: 100%;
+  height: 26vh;
+  z-index: 0;
+}
+
+.white-background {
+  background-color: var(--colors-background-light);
+  width: 100%;
+  height: 50vh;
+  z-index: 1;
+  position: absolute;
+  top: 20vh;
+  border-radius: 12%;
+}
+
+.profile-icon {
+  z-index: 2;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  border: 4px solid var(--mdc-theme-surface);
+  top: 10vh;
+}
+
+.username h1 {
+  font-family: Montserrat-Bold, sans-serif;
+  font-size: 32px;
+  text-align: center;
+  color: var(--colors-text-light);
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+}
+
+.status-message p {
+  color: var(--colors-subtext);
+  font-family: Montserrat-Medium, sans-serif;
+  font-size: 13px;
+  margin-top: -2vh;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.stats h1 {
+  font-family: Montserrat-Bold, sans-serif;
+  font-size: 24px;
+  text-align: center;
+  color: var(--colors-text-light);
+  margin: 1vh 0 0 0;
+}
+
+.stats p {
+  color: var(--colors-subtext);
+  font-family: Montserrat-Medium, sans-serif;
+  font-size: 13px;
+  margin: 0;
+}
+
+.edit-profile-btn {
+  text-decoration: none;
+  background: linear-gradient(
+    90deg,
+    var(--mdc-theme-primary) 0%,
+    var(--mdc-theme-surface) 100%
+  );
+  font-family: Montserrat-Bold, sans-serif;
+  font-size: 17px;
+  color: var(--colors-background-light);
+  border-radius: 30px;
+  padding: 10px 60px 10px 60px;
+  display: inline-block;
+  margin-top: 3vh;
+}
+
+.achievementstext h2 {
+  font-family: Montserrat, sans-serif;
+  font-size: 24px;
+  display: flex;
+  margin: 7vh 0 0 30px;
+}
+
+.achievements-container {
+  height: 20vh;
+  width: 92%;
+  margin: 30px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.achievement {
+  width: 150px;
+  height: 150px;
+  filter: drop-shadow(0 4px 7px rgba(0, 0, 0, 0.2));
+  background-color: var(--colors-background-light);
+  border-radius: 30px;
+  display: inline-block;
+  margin: 5px;
+  overflow: hidden;
+}
+
+.achievement-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+}
+
+.achievement-icon {
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newbie {
+  background-color: #487eff;
+}
+
+.timetracer {
+  background-color: #ffa45a;
+}
+
+.artist {
+  background-color: #f1287c;
+}
+
+.a-new-friend {
+  background-color: #2bbc66;
+}
+
+.achievement-icon i {
+  color: var(--colors-background-light);
+  font-size: 3em;
+}
+
+.achievement-icon-container h1 {
+  color: var(--colors-text-light);
+  font-size: 15px;
+  font-family: Montserrat-Bold, sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+.achievement-icon-container p {
+  font-family: Montserrat, sans-serif;
+  font-size: 9px;
+  color: var(--colors-subtext);
+  text-align: center;
+  margin: 0;
+}
+
+.back-btn {
+  position: absolute;
+  top: 3vh;
+  left: 3vh;
+  z-index: 2;
+  text-decoration: none;
+  color: var(--colors-text-light);
+}
+
+.back-btn span {
+  font-size: 2em;
+}
+
+.settings-btn {
+  position: absolute;
+  top: 3vh;
+  right: 3vh;
+  z-index: 2;
+  text-decoration: none;
+  color: var(--colors-text-light);
+}
+
+.settings-btn span {
+  font-size: 2em;
+}
+
+/*Settings screen*/
+.title h1 {
+  font-family: Montserrat-Bold, sans-serif;
+  font-size: 32px;
+  text-align: center;
+  color: var(--colors-text-light);
+  position: absolute;
+  top: 3rem;
+  left: 2rem;
+}
+
+.settings-container {
+  height: 90vh;
+  text-align: center;
+  margin: 18vh 25px 0 25px;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.settings-container a {
+  text-decoration: none;
+  color: #50555c;
+}
+
+.setting {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.settings-container .subtitle h2 {
+  font-family: Montserrat Regular, sans-serif;
+  font-size: 12px;
+  text-align: center;
+  color: #b3b3b3 !important;
+  height: 2vh;
+  margin: 0;
+}
+
+.settings-title {
+  font-family: Montserrat Regular, sans-serif;
+  font-size: 12px;
+  text-align: center;
+  color: #50555c !important;
+}
+
+.setting .icon {
+  margin: 10px;
+}
+
+.line {
+  width: 352px;
+  height: 0;
+  border: 1px solid rgba(102, 106, 112, 0.1);
+}
+
+.subtitle {
+  margin: 2vh 0 1vh 0;
+}
+
+/*Preferences screen*/
+.preferences-container {
+  height: 90vh;
+  text-align: center;
+  margin: 18vh 25px 0 25px;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.preferences-container .subtitle h2 {
+  font-family: Montserrat-Bold, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: var(--mdc-theme-primary) !important;
+  height: 2vh;
+  margin: 0;
+}
+
+.preferences-container .subtitle p {
+  font-family: Montserrat Regular, sans-serif;
+  font-size: 12px;
+  text-align: left;
+  color: #50555c !important;
+  height: 2vh;
+  margin: 1vh 0 1vh 0;
+}
+
+.categories {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.category {
+  border: 1px solid var(--mdc-theme-primary);
+  background-color: var(--colors-background-light);
+  border-radius: 100px;
+  height: 4vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  margin: 1vh 5px 0 0;
+}
+
+.category p {
+  font-family: Montserrat-Medium, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  color: #b3b3b3;
+  padding: 0 25px 0 25px;
+}
+
+.category-clicked {
+  background-color: var(--mdc-theme-primary);
+}
+
+.category-clicked p {
+  color: var(--colors-background-light);
+}
+
+.time-form {
+  margin: 0 0 2vh 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.save-preferences-btn {
+  text-decoration: none;
+  background: linear-gradient(
+    90deg,
+    var(--mdc-theme-primary) 0%,
+    var(--mdc-theme-surface) 100%
+  );
+  font-family: Montserrat-Bold, sans-serif;
+  font-size: 17px;
+  color: var(--colors-background-light);
+  border-radius: 30px;
+  padding: 10px 0 10px 0;
+  display: inline-block;
+  margin-top: 6vh;
+  width: 26vh;
+}
+
+input[type="time"] {
+  border: none;
+  color: var(--mdc-theme-primary);
+  font-family: Montserrat Regular, sans-serif;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  width: 90px;
+  height: 33px;
+}
+
+input[type="time" i] {
+  text-align: center;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+  margin: 10px 0 10px 0;
+}
+
+.btn-save-wrapper {
+  display: flex;
+  justify-content: center;
 }

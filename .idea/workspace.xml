@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="51dcc6e6-81f7-431f-a13c-471b16c5d15f" name="Default Changelist" comment="experimenteren met inloggen met google">
+    <list default="true" id="51dcc6e6-81f7-431f-a13c-471b16c5d15f" name="Default Changelist" comment="Preferences scherm afgemaakt.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylesheet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/preferences.html" beforeDir="false" afterPath="$PROJECT_DIR$/preferences.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +31,17 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="27N9TeyJjWuHsKqjc0z00FCWMnW" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -40,7 +53,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../hypixelstats" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/images" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -52,6 +65,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\printpal\images" />
       <recent name="C:\xampp\htdocs\Git bestanden\printpal\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -61,6 +75,16 @@
       <recent name="C:\xampp\htdocs\Git bestanden\printpal\images" />
       <recent name="C:\xampp\htdocs\PWA-POC\images" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="profile.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/printpal/profile.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.profile.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -85,6 +109,8 @@
       <workItem from="1650875500929" duration="8704000" />
       <workItem from="1650964989901" duration="6015000" />
       <workItem from="1653293162738" duration="1042000" />
+      <workItem from="1653896754948" duration="7907000" />
+      <workItem from="1653999578563" duration="329000" />
     </task>
     <task id="LOCAL-00001" summary="Basis PWA opgezet">
       <created>1649233631368</created>
@@ -247,7 +273,42 @@
       <option name="project" value="LOCAL" />
       <updated>1650970653152</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Eerste opzet profielpagina gemaakt">
+      <created>1653394749506</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1653394749506</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Eerste opzet voor achievements toegevoegd aan profiel">
+      <created>1653405210576</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1653405210576</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Achievements op profiel afgemaakt">
+      <created>1653422846420</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1653422846420</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Settings scherm afgemaakt">
+      <created>1653901858836</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1653901858836</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Preferences scherm afgemaakt.">
+      <created>1653991828487</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1653991828487</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,10 +336,8 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Basis PWA opgezet" />
     <MESSAGE value="Eigenschappen van basis-PWA aangepast om te matchen met de stijl van Printpal" />
     <MESSAGE value="Logo en textbox toegevoegd" />
     <MESSAGE value="Material design geïnstalleerd" />
@@ -299,6 +358,11 @@
     <MESSAGE value="Comments toegevoegd" />
     <MESSAGE value="Errorcodes toegevoegd aan loginscherm, en comments bijgewerkt" />
     <MESSAGE value="experimenteren met inloggen met google" />
-    <option name="LAST_COMMIT_MESSAGE" value="experimenteren met inloggen met google" />
+    <MESSAGE value="Eerste opzet profielpagina gemaakt" />
+    <MESSAGE value="Eerste opzet voor achievements toegevoegd aan profiel" />
+    <MESSAGE value="Achievements op profiel afgemaakt" />
+    <MESSAGE value="Settings scherm afgemaakt" />
+    <MESSAGE value="Preferences scherm afgemaakt." />
+    <option name="LAST_COMMIT_MESSAGE" value="Preferences scherm afgemaakt." />
   </component>
 </project>
