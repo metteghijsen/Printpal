@@ -628,7 +628,6 @@ footer {
 
 .settings-container {
   height: 90vh;
-  text-align: center;
   margin: 18vh 25px 0 25px;
   display: flex;
   overflow: hidden;
@@ -649,7 +648,6 @@ footer {
 .settings-container .subtitle h2 {
   font-family: Montserrat Regular, sans-serif;
   font-size: 12px;
-  /* text-align: center; */
   color: #b3b3b3 !important;
   height: 2vh;
   margin: 0;
@@ -679,7 +677,6 @@ footer {
 /*Preferences screen*/
 .preferences-container {
   height: 90vh;
-  text-align: center;
   margin: 18vh 25px 0 25px;
   display: flex;
   overflow: hidden;
@@ -689,7 +686,6 @@ footer {
 .preferences-container .subtitle h2 {
   font-family: Montserrat-Bold, sans-serif;
   font-size: 16px;
-  text-align: center;
   color: var(--mdc-theme-primary) !important;
   height: 2vh;
   margin: 0;
@@ -781,4 +777,5 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 .btn-save-wrapper {
   display: flex;
   justify-content: center;
+  text-align: center;
 }
