@@ -1,0 +1,127 @@
+:root {
+  --colors-background-dark: #2d2d2d;
+  --colors-background-light: #ffff;
+  --colors-text-light: #4c4c4c;
+  --colors-text-highlight: #4c4c4c;
+  --colors-text-dark: #000;
+  --fonts-normal-text: arial, verdana;
+
+  --mdc-theme-primary: #07f2b0 !important;
+  --mdc-theme-on-primary: #ffffff !important;
+  --mdc-theme-surface: #06bfbf !important;
+  --mdc-theme-on-surface: #000000 !important;
+  --mdc-text-field-icon: #4c4c4c !important;
+
+  --footer-icon-color: B3B3B3;
+}
+
+::selection {
+  background: var(--mdc-theme-secondary);
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  background: var(--colors-background-light);
+  background-size: cover;
+  font-family: var(--fonts-normal-text);
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--colors-text-light);
+  cursor: default;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.container .logo {
+  height: 7vh;
+  margin: 30px;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.messageForm {
+  width: 300px;
+  margin: 20px 0;
+  background-color: white;
+  border-radius: 10px;
+  color: var(--mdc-theme-primary);
+}
+
+.messageForm {
+  display: block;
+}
+
+/*styling van login en signup DONT TOUCH PLS*/
+
+.mdc-text-field .mdc-text-field__input {
+  caret-color: #07f2b0 !important;
+}
+
+.textfield {
+  width: 300px;
+  margin: 10px;
+}
+
+.login-screen-buttons {
+  display: flex;
+}
+
+.login-button {
+  margin: 5px;
+}
+
+.signup-button {
+  margin: 5px;
+}
+
+.error-textfield {
+  color: var(--mdc-theme-error);
+  display: none;
+}
+
+/*Navbar styling DONT TOUCH PLS*/
+footer {
+  display: flex;
+  justify-content: center;
+  font-family: Montserrat;
+  font-size: 10px;
+  height: 5%;
+
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--colors-background-light);
+  color: var(--footer-icon-color);
+  text-align: center;
+}
+
+.taskbar-icons {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
