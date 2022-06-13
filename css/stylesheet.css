@@ -35,11 +35,13 @@ html {
 @font-face {
   font-family: "Montserrat-Bold";
   src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Montserrat-Medium";
   src: url("../fonts/Montserrat-Medium.ttf") format("truetype");
+  font-display: swap;
 }
 
 body {
@@ -130,6 +132,13 @@ a {
   );
 }
 
+#createButton {
+  width: 50px;
+  height: 50px;
+  min-width: initial;
+  background: linear-gradient(90deg, #07f2b0 0%, #06bfbf 100%);
+}
+
 .container form {
   display: flex;
   flex-direction: column;
@@ -200,6 +209,7 @@ footer {
   width: 100%;
   justify-content: space-evenly;
   flex-direction: row;
+  align-items: center;
 }
 
 .left {
@@ -231,6 +241,16 @@ footer {
   background-color: #06bfbf;
 }
 
+.add-button {
+  width: 12vw;
+  height: 12vw;
+  border-radius: 50%;
+  background-color: #00ffae;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .titletext h1 {
   font-family: Montserrat;
   font-style: normal;
@@ -240,7 +260,7 @@ footer {
 }
 
 .bold {
-  font-weight: 900;
+  font-weight: 700;
 }
 
 #historysection h2 {
@@ -275,7 +295,7 @@ footer {
   color: #08f2b0;
   margin: 0;
   margin-bottom: 5px;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .card p {
@@ -283,7 +303,7 @@ footer {
   font-style: normal;
   font-size: 1rem;
   margin: 0;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .card img {

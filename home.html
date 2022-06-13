@@ -33,6 +33,12 @@
       <div class="left">
         <img src="images/printpallogo_grey.png" alt="logo" class="logo" />
       </div>
+      <div class="add-button">
+        <i class="material-icons md-24 md-light">
+          download
+        </i>
+      </div>
+
       <a href="profile.html">
         <div class="right">
           <div class="profileavatar"></div>
@@ -149,11 +155,11 @@
     <div class="taskbar-icons">
       <div class="home-icon">
         <p>
-          <i class="material-icons">home</i>
+          <i class="material-icons" >home</i>
         </p>
       </div>
       <div class="mdc-touch-target-wrapper">
-        <button class="mdc-fab mdc-fab--mini mdc-fab--touch" style="background: linear-gradient(90deg, #07f2b0 0%, #06bfbf 100%)"
+        <button id="createButton" class="mdc-fab mdc-fab--mini mdc-fab--touch" 
         >
           <div class="mdc-fab__ripple"></div>
           <span class="material-icons  mdc-fab__icon">add</span>
@@ -169,6 +175,7 @@
   </footer>
 
   <script src="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.js"></script>
+  <script src="js/addbutton.js"></script>
 
   <script>
     const textField = new mdc.textField.MDCTextField(
