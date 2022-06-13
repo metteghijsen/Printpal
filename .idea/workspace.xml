@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51dcc6e6-81f7-431f-a13c-471b16c5d15f" name="Default Changelist" comment="Preferences scherm afgemaakt.">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_04_2022_09_38__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_04_2022_09_38__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylesheet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/preferences.html" beforeDir="false" afterPath="$PROJECT_DIR$/preferences.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -336,6 +337,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Eigenschappen van basis-PWA aangepast om te matchen met de stijl van Printpal" />
