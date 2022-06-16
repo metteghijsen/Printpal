@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51dcc6e6-81f7-431f-a13c-471b16c5d15f" name="Default Changelist" comment="Preferences scherm afgemaakt.">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_04_2022_09_38__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_04_2022_09_38__Default_Changelist_.xml" afterDir="false" />
+    <list default="true" id="51dcc6e6-81f7-431f-a13c-471b16c5d15f" name="Default Changelist" comment="Styling van login en signup scherm gelijk gemaakt met de rest van de app">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylesheet.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/signup.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +107,7 @@
       <workItem from="1655373220666" duration="237000" />
       <workItem from="1655373541515" duration="2000" />
       <workItem from="1655373575073" duration="4000" />
-      <workItem from="1655381283712" duration="1126000" />
+      <workItem from="1655381283712" duration="2643000" />
     </task>
     <task id="LOCAL-00001" summary="Basis PWA opgezet">
       <created>1649233631368</created>
@@ -308,7 +305,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653991828487</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Styling van login en signup scherm gelijk gemaakt met de rest van de app">
+      <created>1655382543935</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1655382543935</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -338,7 +342,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Eigenschappen van basis-PWA aangepast om te matchen met de stijl van Printpal" />
     <MESSAGE value="Logo en textbox toegevoegd" />
     <MESSAGE value="Material design geïnstalleerd" />
     <MESSAGE value="Textbox label error gefixt, design tot nu toe responsive gemaakt" />
@@ -363,6 +366,7 @@
     <MESSAGE value="Achievements op profiel afgemaakt" />
     <MESSAGE value="Settings scherm afgemaakt" />
     <MESSAGE value="Preferences scherm afgemaakt." />
-    <option name="LAST_COMMIT_MESSAGE" value="Preferences scherm afgemaakt." />
+    <MESSAGE value="Styling van login en signup scherm gelijk gemaakt met de rest van de app" />
+    <option name="LAST_COMMIT_MESSAGE" value="Styling van login en signup scherm gelijk gemaakt met de rest van de app" />
   </component>
 </project>
