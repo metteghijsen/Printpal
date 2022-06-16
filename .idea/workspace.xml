@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51dcc6e6-81f7-431f-a13c-471b16c5d15f" name="Default Changelist" comment="Styling van login en signup scherm gelijk gemaakt met de rest van de app">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="51dcc6e6-81f7-431f-a13c-471b16c5d15f" name="Default Changelist" comment="Minor changes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -107,7 +104,7 @@
       <workItem from="1655373220666" duration="237000" />
       <workItem from="1655373541515" duration="2000" />
       <workItem from="1655373575073" duration="4000" />
-      <workItem from="1655381283712" duration="2643000" />
+      <workItem from="1655381283712" duration="2659000" />
     </task>
     <task id="LOCAL-00001" summary="Basis PWA opgezet">
       <created>1649233631368</created>
@@ -312,7 +309,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655382543935</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Minor changes">
+      <created>1655384161985</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1655384161985</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -342,7 +346,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Logo en textbox toegevoegd" />
     <MESSAGE value="Material design geïnstalleerd" />
     <MESSAGE value="Textbox label error gefixt, design tot nu toe responsive gemaakt" />
     <MESSAGE value="Footer gemaakt, kleine foutjes opgeschoond" />
@@ -367,6 +370,7 @@
     <MESSAGE value="Settings scherm afgemaakt" />
     <MESSAGE value="Preferences scherm afgemaakt." />
     <MESSAGE value="Styling van login en signup scherm gelijk gemaakt met de rest van de app" />
-    <option name="LAST_COMMIT_MESSAGE" value="Styling van login en signup scherm gelijk gemaakt met de rest van de app" />
+    <MESSAGE value="Minor changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor changes" />
   </component>
 </project>
