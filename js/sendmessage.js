@@ -47,10 +47,10 @@ function writeUserData(message) {
     console.log("Done");
 }
 
-window.addEventListener('DOMContentLoaded', (event) => {
+/* window.addEventListener('DOMContentLoaded', (event) => {
     console.log('DOM fully loaded and parsed');
     document.getElementById("sendbutton").addEventListener("click", e => {
         console.log('nextpage')
         writeUserData();
     });
-});
+}); */

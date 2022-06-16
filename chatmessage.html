@@ -26,14 +26,15 @@
 
     <script type="module" src="js/pwa.js"></script>
 </head>
+
 <body>
     <div class="container">
         <div class="header-container">
             <div id="header" class="header">
                 <div class="left">
-                    <a href="write_message.html"><span class="material-icons">
-                            arrow_back_ios
-                        </span> </a>
+                    <a href="chat.html" class="back-btn">
+                        <span class="material-icons">arrow_back_ios_new</span>
+                    </a>
                 </div>
                 <a href="profilepage.html">
             </div>
@@ -45,8 +46,8 @@
                 <img class="profilePicture" src="images/profilepictures/Rectangle 40.png" />
             </div>
         </div>
-        
-        
+
+
         <div class="message-container">
             <div class="messages-right push">
                 <span class="message-right">
@@ -80,10 +81,16 @@
             </div>
         </div>
         <div class="chat-message-form-container">
-                <!-- <label for="textarea">Write message</label> -->
-                <input type="text" class="chat-message-text" placeholder="Type your message here"></input>
-                <input type="submit" class="send-button"></input>
+            <!-- <label for="textarea">Write message</label> -->
+            <input type="text" class="chat-message-text" placeholder="Type your message here"></input>
+            <button id="createButton" class="mdc-fab mdc-fab--mini mdc-fab--touch">
+                <div class="mdc-fab__ripple"></div>
+                <span class="material-icons  mdc-fab__icon">send</span>
+                <div class="mdc-fab__touch"></div>
+            </button>
         </div>
+
+
     </div>
 </body>
 

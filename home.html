@@ -42,7 +42,7 @@
 
       <a href="profile.html">
         <div class="right">
-          <div class="profileavatar"></div>
+          <img src="images/profile-placeholder.png" alt="profile-picture" class="profileavatar">
         </div>
       </a>
     </div>
@@ -120,7 +120,7 @@
         </div> -->
 
       <div class="card">
-        <div class="grid-item"><img src="images/avatar.png" /></div>
+        <div class="grid-item"><a href="user1.html"><img src="images/avatar.png" /></a></div>
         <div class="grid-item">
           <h3>Venting</h3>
           <p>Laura Lopez</p>
@@ -130,20 +130,20 @@
         </div>
       </div>
       <div class="card">
-        <div class="grid-item"><img src="images/avatar.png" /></div>
+        <div class="grid-item"><a href="user2.html"><img src="images/profilepictures/Rectangle 40.png" /></a></div>
         <div class="grid-item">
           <h3>Nice Message</h3>
-          <p>Laura Lopez</p>
+          <p>Nicky Smith</p>
         </div>
         <div class="grid-item">
           <p>18:35</p>
         </div>
       </div>
       <div class="card">
-        <div class="grid-item"><img src="images/avatar.png" /></div>
+        <div class="grid-item"><a href="user3.html"><img src="images/profilepictures/Rectangle 41.png" /></a></div>
         <div class="grid-item">
           <h3>Motivational</h3>
-          <p>Laura Lopez</p>
+          <p>Tim Jansen</p>
         </div>
         <div class="grid-item">
           <p>18:35</p>
@@ -156,37 +156,28 @@
     <div class="taskbar-icons">
       <div class="home-icon">
         <p><a href="home.html">
-          <i class="material-icons" >home</i></a>
+            <i class="material-icons">home</i></a>
         </p>
       </div>
       <div class="mdc-touch-target-wrapper">
         <a href="write_message.html">
 
-        <button id="createButton" class="mdc-fab mdc-fab--mini mdc-fab--touch" 
-        >
-          <div class="mdc-fab__ripple"></div>
-          <span class="material-icons  mdc-fab__icon">add</span>
-          <div class="mdc-fab__touch"></div>
-        </button></a>
+          <button id="createButton" class="mdc-fab mdc-fab--mini mdc-fab--touch">
+            <div class="mdc-fab__ripple"></div>
+            <span class="material-icons  mdc-fab__icon">add</span>
+            <div class="mdc-fab__touch"></div>
+          </button></a>
       </div>
       <div class="chat-icon">
         <p><a href="chat.html">
-          <i class="material-icons">chat</i>
+            <i class="material-icons">chat</i>
         </p></a>
       </div>
     </div>
   </footer>
 
-  <script src="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.js"></script>
-  <script src="js/addbutton.js"></script>
-
   <script>
-    const textField = new mdc.textField.MDCTextField(
-      document.querySelector(".mdc-text-field")
-    );
-    const helperText = new mdc.textField.MDCTextFieldHelperText(
-      document.querySelector(".mdc-text-field-helper-text")
-    );
+
   </script>
 </body>
 

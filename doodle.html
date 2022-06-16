@@ -30,22 +30,23 @@
     <div class="container">
         <div class="header">
             <div class="left">
-              <a href="write_message.html"><span class="material-icons">
-                  arrow_back_ios
-                  </span>   </a>   </div>
+                <a href="write_message.html" class="back-btn">
+                    <span class="material-icons">arrow_back_ios_new</span>
+                </a>
+            </div>
             <a href="profilepage.html">
-          </div>
-          </a>
         </div>
+        </a>
+    </div>
 
-        <div class="doodle-title">
-            <h1>Doodle</h1>
-        </div>
-        <div class="drawing-container">
-            <canvas id="can" width="322" height="507px">
+    <div class="title">
+        <h1>Doodle</h1>
+    </div>
+    <div class="drawing-container">
+        <canvas id="can" width="322" height="507px">
 
-            </canvas>
-            <!-- <div style="position:absolute;top:12%;left:43%;">Choose Color</div>
+        </canvas>
+        <!-- <div style="position:absolute;top:12%;left:43%;">Choose Color</div>
             <div style="position:absolute;top:15%;left:45%;width:10px;height:10px;background:green;" id="green"
                 onclick="color(this)"></div>
             <div style="position:absolute;top:15%;left:46%;width:10px;height:10px;background:blue;" id="blue" onclick="color(this)">
@@ -61,10 +62,14 @@
             <div style="position:absolute;top:20%;left:43%;">Eraser</div>
             <div style="position:absolute;top:22%;left:45%;width:15px;height:15px;background:white;border:2px solid;" id="white"
                 onclick="color(this)"></div> -->
-            <img id="canvasimg" style="position:absolute;top:10%;left:52%;" style="display:none;">
+        <img id="canvasimg" style="position:absolute;top:10%;left:52%;" style="display:none;">
+
+        <div class="doodle-button-container">
+            <input type="button" value="Clear" class="drawButton-clear" id="clr" size="30" onclick="erase()">
             <input type="button" value="Done" class="drawButton" id="btn" size="30" onclick="save()">
-            <input type="button" value="Clear" class="drawButton" id="clr" size="30" onclick="erase()">
         </div>
+
+    </div>
     </div>
 </body>
 

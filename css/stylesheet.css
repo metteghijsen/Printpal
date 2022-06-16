@@ -16,6 +16,12 @@ html {
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
 :root {
   --colors-background-dark: #2d2d2d;
   --colors-background-light: #ffff;
@@ -71,7 +77,7 @@ a {
   height: 100%;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  overflow: visible;
 
   width: 90%;
   margin-right: auto;
@@ -86,11 +92,6 @@ a {
   justify-content: center;
   align-items: center;
 }
-
-/* .container .logo {
-  height: 7vh;
-  margin: 30px;
-} */
 
 .material-icons.md-18 {
   font-size: 18px;
@@ -144,6 +145,7 @@ a {
 
 #text {
   width: 100%;
+  font-family: Montserrat-Regular;
 }
 
 .messageForm {
@@ -170,6 +172,29 @@ a {
   border-style: none;
 }
 
+.login-subtitle h2{
+  font-family: 'Montserrat-Regular';
+font-style: normal;
+font-size: 16px;
+line-height: 97.5%;
+color: #50555C;
+margin-left: 15px;
+}
+
+.signup-field h2{
+font-family: 'Montserrat-Regular';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 97.5%;
+
+display: flex;
+align-items: center;
+letter-spacing: -0.015em;
+
+color: #50555C;
+}
+
 .login-screen-buttons {
   display: flex;
 }
@@ -194,7 +219,7 @@ footer {
   font-family: Montserrat;
   font-style: normal;
   font-size: 10px;
-  height: 5%;
+  height: 10vh;
 
   position: fixed;
   left: 0;
@@ -203,7 +228,7 @@ footer {
   background-color: var(--colors-background-light);
   color: var(--footer-icon-color);
   text-align: center;
-  bottom: calc(1rem + env(safe-area-inset-bottom));
+  bottom: calc(0rem + env(safe-area-inset-bottom));
 }
 
 .taskbar-icons {
@@ -237,10 +262,9 @@ footer {
 }
 
 .profileavatar {
-  width: 12vw;
+  width: 12vw !important;
   height: 12vw;
   border-radius: 50%;
-  background-color: #06bfbf;
 }
 
 .add {
@@ -263,6 +287,10 @@ footer {
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
+}
+
+.add-button a span{
+  font-family: Montserrat-Medium;
 }
 
 .titletext h1 {
@@ -298,7 +326,7 @@ footer {
   /* background-color: #e2e2e2; */
   border-radius: 15px;
   margin: 0px;
-  box-shadow: 0px 1px 18px 4px rgba(0, 0, 0, 0.04);
+  box-shadow: 0px 1px 18px 4px rgba(0, 0, 0, 0.06);
   margin-bottom: 2vh;
 }
 
@@ -437,9 +465,9 @@ footer {
 }
 
 .historylist {
-  overflow: auto;
+  overflow: visible;
   white-space: nowrap;
-  height: 100vh;
+  height: 110vh;
 }
 /*Profile screen*/
 .profile-container {
@@ -709,7 +737,7 @@ footer {
 
 /*Preferences screen*/
 .preferences-container {
-  height: 90vh;
+  height: 60vh;
   margin: 18vh 25px 0 25px;
   display: flex;
   overflow: hidden;
@@ -793,6 +821,23 @@ footer {
   width: 26vh;
 }
 
+.open-prints-btn{
+  text-decoration: none;
+  background: linear-gradient(
+    90deg,
+    var(--mdc-theme-primary) 0%,
+    var(--mdc-theme-surface) 100%
+  );
+  font-family: Montserrat-Bold, sans-serif;
+  font-size: 17px;
+  color: var(--colors-background-light);
+  border-radius: 30px;
+  padding: 10px 0 10px 0;
+  display: inline-block;
+  width: 26vh;
+  text-align: center;
+}
+
 input[type="time"] {
   border: none;
   color: var(--mdc-theme-primary);
@@ -822,12 +867,14 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   width: 100%;
   display: flex;
   text-align: left;
+  margin-left: 11px;
 }
 
 .chat-title > h1 {
   font-weight: 700;
   font-size: 36px;
-  margin: 94px 0 26px 26px;
+  margin: 70px 0 26px;
+  font-family: Montserrat;
 }
 
 .person {
@@ -846,36 +893,48 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 .name-container {
   height: 100%;
-  width: 100%;
-  border-bottom: 1px solid rgba(102, 106, 112, 0.1);
+  width: 80vw;
   display: flex;
   align-items: center;
+}
+
+.name {
+  width: 70vw;
 }
 
 .person-container {
   overflow: auto;
   height: 100vh;
   white-space: nowrap;
+  margin-left: 10px;
 }
 
 .name h2 {
   margin: 0;
   text-align: left;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1.2rem;
   color: var(--mdc-theme-primary);
+  margin-left: 5vw;
+  margin-bottom: 1vh;
+  font-family: Montserrat;
+
 }
 
 .name p {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 5vw;
   text-align: left;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 1rem;
+  font-family: Montserrat;
+
 }
 
 .timeStamp {
-  position: absolute;
-  right: 20px;
+float: right;
+margin-left: 20vw;
 }
 
 /* End chat section*/
@@ -908,13 +967,13 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 .chatmessage-title {
   display: flex;
   align-items: center;
-  font-family: var(--fonts-normal-text);
+  font-family: Montserrat-Bold;
   color: var(--mdc-theme-primary);
-  font-weight: 700;
   font-size: 1.2em;
   padding: 0;
-  margin: 0;
-  height: 10vh;
+  margin-left: 40px;
+  margin-bottom: 5px;
+  height: 9vh;
 }
 .chatmessage-title h1{
   padding: 0;
@@ -973,7 +1032,7 @@ p.from-me::after {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 42vh;
+  margin-top: 45vh;
 }
 
 .chat-message-text {
@@ -1015,37 +1074,56 @@ p.from-me::after {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 12vh;
+  flex-direction: column;
 }
 
 #can {
-  width: 322px;
-  height: 507px;
+  width: 85vw;
+  height: 58vh;
   /* border: 1px solid; */
   box-shadow: 0px 0px 18px 4px #00000014;
 }
 
 .drawButton {
-  width: 87px;
-  height: 40px;
-  background: linear-gradient(99.11deg, #09f2b1 2.76%, #1ac4c4 87.01%);
-  border-radius: 100px;
-  border-style: none;
-  color: var(--mdc-theme-on-primary);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 10px 24px;
+gap: 10px;
+color: var(--mdc-theme-on-primary);
+background: linear-gradient(99.11deg, #09F2B1 2.76%, #1AC4C4 87.01%);
+border-radius: 100px;
+border: none;
+font-family: Montserrat-Medium;
+font-size: 16px;
 }
 
-#btn {
-  position: absolute;
-  top: 88%;
-  left: 53%;
+.drawButton-clear{
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 10px 24px;
+gap: 10px;
+background: #FFFFFF;
+border: 1px solid rgba(8, 242, 176, 0.973958);
+border-radius: 100px;
+color: #B3B3B3;
+font-family: Montserrat-Medium;
+font-size: 16px;
 }
 
-#clr {
-  position: absolute;
-  top: 88%;
-  left: 23%;
+.doodle-button-container{
+  margin: 3vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.doodle-button-container *{
+  margin: 5px;
 }
 
 /* Code Wen */
@@ -1062,9 +1140,7 @@ p.from-me::after {
 }
 
 .message {
-  top: 202;
-  left: 24;
-  right: 24;
+  margin-top: 4vh;
 }
 
 .message h1 {
@@ -1072,7 +1148,7 @@ p.from-me::after {
   top: 175;
   left: 24;
   font-weight: 700;
-  font-size: 16;
+  font-size: 1.2rem;
   letter-spacing: -1.5%;
 }
 
@@ -1097,6 +1173,7 @@ p.from-me::after {
   background: var(--mdc-theme-primary);
   border: none;
   border-radius: 100px;
+  font-family: Montserrat-Medium;
 }
 
 .add button a {
@@ -1291,7 +1368,6 @@ p.from-me::after {
 }
 
 .send {
-  width: 90vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1318,6 +1394,7 @@ p.from-me::after {
 }
 
 .thumb {
+  margin-top: 10vh;
   width: 100%;
 }
 
@@ -1338,11 +1415,15 @@ p.from-me::after {
   justify-content: center;
   align-items: center;
   color: var(--mdc-theme-primary);
+  font-family: Montserrat;
 }
 
 .confirm {
   text-align: center;
   color: var(--mdc-text-field-icon);
+  margin-bottom: 5vh;
+  font-family: Montserrat;
+
 }
 
 .confirmation {

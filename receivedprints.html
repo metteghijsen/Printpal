@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
 
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -39,77 +39,70 @@
         </div>
     </div>
     </a>
-</div>
+  </div>
 
 
-    <section id="newprintslist">
-        <div class="printcontent">
-            <div class="printlist">
-                <div class="printcard">
-                    <h1>Hey!</h1>
-                    <p>Inspiration comes from within yourself. One has to be positive. When you’re positive, good things happen.</p>
-                    <img src="images/doodle.png">
-                    <p><span class="green">Motivational</span><br>Laura Lopez</p>
-                </div>
-                <div class="printcard">
-                    <h1>Hey!</h1>
-                    <p>Inspiration comes from within yourself. One has to be positive. When you’re positive, good things happen.</p>
-                    <img src="images/doodle.png">
-                    <p><span class="green">Motivational</span><br>Laura Lopez</p>
-                </div>
-                <div class="printcard">
-                    <h1>Hey!</h1>
-                    <p>Inspiration comes from within yourself. One has to be positive. When you’re positive, good things happen.</p>
-                    <img src="images/doodle.png">
-                    <p><span class="green">Motivational</span><br>Laura Lopez</p>
-                </div>
-            </div>
-            <div class="center">
-            <a href="home.html"><button 
-                class="mdc-button mdc-button--raised login-button"
-                type="button"
-                id="notification-button"
-              >
-                <span class="mdc-button__label">Done</span>
-              </button></a>
-            </div>
-
+  <section id="newprintslist">
+    <div class="printcontent">
+      <div class="printlist">
+        <div class="printcard">
+          <h1>Hey!</h1>
+          <p>Inspiration comes from within yourself. One has to be positive. When you’re positive, good things happen.
+          </p>
+          <img src="images/doodle.png">
+          <p><span class="green">Motivational</span><br>Laura Lopez</p>
         </div>
+        <div class="printcard">
+          <h1>Hey!</h1>
+          <p>Inspiration comes from within yourself. One has to be positive. When you’re positive, good things happen.
+          </p>
+          <img src="images/doodle.png">
+          <p><span class="green">Motivational</span><br>Laura Lopez</p>
+        </div>
+        <div class="printcard">
+          <h1>Hey!</h1>
+          <p>Inspiration comes from within yourself. One has to be positive. When you’re positive, good things happen.
+          </p>
+          <img src="images/doodle.png">
+          <p><span class="green">Motivational</span><br>Laura Lopez</p>
+        </div>
+      </div>
+      <div class="center">
+        <a href="home.html" class="open-prints-btn">Done</a>
+      </div>
 
-    </section>
+    </div>
+
+  </section>
 
 
   <footer>
     <div class="taskbar-icons">
       <div class="home-icon">
-        <p>
-          <i class="material-icons">home</i>
+        <p><a href="home.html">
+            <i class="material-icons">home</i></a>
         </p>
       </div>
       <div class="mdc-touch-target-wrapper">
-        <button class="mdc-fab mdc-fab--mini mdc-fab--touch" style="background: linear-gradient(90deg, #07f2b0 0%, #06bfbf 100%)"
-        >
-          <div class="mdc-fab__ripple"></div>
-          <span class="material-icons  mdc-fab__icon">add</span>
-          <div class="mdc-fab__touch"></div>
-        </button>
+        <a href="write_message.html">
+
+          <button id="createButton" class="mdc-fab mdc-fab--mini mdc-fab--touch">
+            <div class="mdc-fab__ripple"></div>
+            <span class="material-icons  mdc-fab__icon">add</span>
+            <div class="mdc-fab__touch"></div>
+          </button></a>
       </div>
       <div class="chat-icon">
-        <p>
-          <i class="material-icons">chat</i>
-        </p>
+        <p><a href="chat.html">
+            <i class="material-icons">chat</i>
+        </p></a>
       </div>
+    </div>
   </footer>
 
-  <script src="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.js"></script>
 
   <script>
-    const textField = new mdc.textField.MDCTextField(
-      document.querySelector(".mdc-text-field")
-    );
-    const helperText = new mdc.textField.MDCTextFieldHelperText(
-      document.querySelector(".mdc-text-field-helper-text")
-    );
+
   </script>
 </body>
 
