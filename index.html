@@ -25,12 +25,15 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="chat-title">
-      <h1>Login</h1>
-    </div>
-    <div class="login-subtitle">
-      <h2>Please log in to continue</h2>
+  <div class="login-container">
+
+    <div class="title-container">
+      <div class="chat-title">
+        <h1>Login</h1>
+      </div>
+      <div class="login-subtitle">
+        <h2>Please log in to continue</h2>
+      </div>
     </div>
 
     <form>
@@ -53,22 +56,16 @@
 
       <p id="error-textfield" class="error-textfield"></p>
 
-      <div class="login-screen-buttons">
-        <button class="mdc-button mdc-button--raised login-button" type="button" id="login-button">
+      <div class="doodle-button-container">
+        <button class="drawButton" type="button" id="login-button">
           <span class="mdc-button__label">Login</span>
         </button>
 
-        <button class="mdc-button mdc-button--outlined signup-button" type="button" id="signup-button">
-          <span class="mdc-button__ripple"></span>
+        <button class="drawButton-clear" type="button" id="signup-button" value="Sign up">
           <span class="mdc-button__label">Sign up</span>
         </button>
       </div>
     </form>
-
-    <div class="signup-field">
-      <h2> Don't have an account? <a href="signup.html">Sign up</a>
-      </h2>
-    </div>
   </div>
 
   <script src="js/pwa.js"></script>
