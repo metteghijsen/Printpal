@@ -24,8 +24,29 @@ The code that is in this repository from the Progressive Web App. This is what a
 *subscription only
        
 ## Installation
+### Requirements
+• [Material Design Stylesheet](https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.css) <br>
+• [Bootstrap Icons](https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css) <br>
+
+### Install for development
+After cloning the repository all you have to do is open the project in you favourite IDE.
+
+### Install on Mobile
+Installing the PWA om your homescreen is quite simple and can be done is a few steps: <br>
+• Go to the Printpal website <br>
+• Click on the 3 menu dots next to the address bar at the top of your screen <br>
+• Tap the "Add to homescreen" option <br>
+After following these steps the PWA will be installed on your device and have been added to your homescreen. <br>
+
+### Install on Desktop
+Like installing the PWA on mobile, installing it on desktop is pretty straightforward as well: <br>
+• On your computer, open Chrome(Other browsers may not support downloading PWA's) <br>
+• Go to the Printpal website <br>
+• At the top right of the address bar, click Install <br>
+• Follow the onscreen instructions to install the PWA <br>
 
 ## Usage
+
 
 ## Support
 If you have any questions, feel free to contact us by sending an e-mail to info.printpal@gmail.com.
