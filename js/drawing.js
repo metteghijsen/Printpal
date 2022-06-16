@@ -135,12 +135,18 @@ function erase() {
     }
 }
 
-// function save() {
-//     document.getElementById("canvasimg").style.border = "2px solid";
-//     let dataURL = canvas.toDataURL();
-//     document.getElementById("canvasimg").src = dataURL;
-//     document.getElementById("canvasimg").style.display = "inline";
-// }
+function save() {
+    canvas.toBlob(async blob => {
+    const blob_url = URL.createObjectURL(blob);
+    const ref = db.collection('blob').doc('blob');
+    const array_buffer = await blob.arrayBuffer();
+    const uint8_array = new Uint8Array(array_buffer);
+    const firebase_blob = firebase.firestore.Blob.fromUint8Array(uint8_array);
+    ref.update({
+      image: firebase_blob,
+    });
+  });
+}
     
 function findxy(res, e) {
     if (res == 'down') {

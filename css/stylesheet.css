@@ -1,11 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html {
+  background-color: #ffffff !important;
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url("../fonts/Montserrat-Medium.ttf") format("truetype");
+  font-display: swap;
+}
+
 :root {
   --colors-background-dark: #2d2d2d;
   --colors-background-light: #ffff;
   --colors-text-light: #4c4c4c;
   --colors-text-highlight: #4c4c4c;
   --colors-text-dark: #000;
-  --fonts-normal-text: arial, verdana;
+  --fonts-head-text: Montserrat-Bold;
+  --fonts-normal-text: Montserrat-Medium;
   --colors-subtext: #949494;
+  --text-field-color-alt: #B3B3B3;
 
   --mdc-theme-primary: #07f2b0 !important;
   /* --mdc-theme-secondary: #029342 !important; */
@@ -25,24 +45,6 @@
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
 } */
-
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-html {
-  background-color: #ffffff !important;
-}
-
-@font-face {
-  font-family: "Montserrat-Bold";
-  src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Montserrat-Medium";
-  src: url("../fonts/Montserrat-Medium.ttf") format("truetype");
-  font-display: swap;
-}
 
 body {
   height: 100%;
@@ -137,7 +139,11 @@ a {
 .container form {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 100%;
+}
+
+#text {
+  width: 100%;
 }
 
 .messageForm {
@@ -161,6 +167,7 @@ a {
 .textfield {
   width: 300px;
   margin: 10px;
+  border-style: none;
 }
 
 .login-screen-buttons {
@@ -234,6 +241,12 @@ footer {
   height: 12vw;
   border-radius: 50%;
   background-color: #06bfbf;
+}
+
+.add {
+  display: flex;
+  justify-content: end;
+  margin: 1vh 0 2vh 0;
 }
 
 .add-button {
@@ -725,6 +738,10 @@ footer {
   justify-content: flex-start;
 }
 
+#categories2 {
+  margin-bottom: 2vh;
+}
+
 .category {
   border: 1px solid var(--mdc-theme-primary);
   background-color: var(--colors-background-light);
@@ -825,7 +842,6 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 .profilePicture {
   width: 50px;
   height: 50px;
-  margin: 0 26px 0 26px;
 }
 
 .name-container {
@@ -863,6 +879,122 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 /* End chat section*/
+
+/* Begin Chat Message section */
+.header-container {
+  display: flex;
+  align-items: center;
+  height: 10vh;
+}
+
+#header {
+  width:auto;
+}
+
+.push {
+  margin-left: auto;
+}
+
+.message-container > .messages-right {
+  display: flex;
+  justify-content: right;
+}
+
+.message-container >.messages-left {
+  display: flex;
+  justify-content: left;
+}
+
+.chatmessage-title {
+  display: flex;
+  align-items: center;
+  font-family: var(--fonts-normal-text);
+  color: var(--mdc-theme-primary);
+  font-weight: 700;
+  font-size: 1.2em;
+  padding: 0;
+  margin: 0;
+  height: 10vh;
+}
+.chatmessage-title h1{
+  padding: 0;
+  margin: 0;
+}
+
+.message-container .message-right {
+  background-color: var(--mdc-theme-primary);
+  color: var(--mdc-theme-on-primary);
+  border-radius: .5rem;
+  padding: 0 .5rem 0 .5rem;
+  margin: .2rem 0 .2rem 0;
+}
+
+/* p.from-me::before {
+  border-bottom-left-radius: 0.8rem 0.7rem;
+  border-right: 1rem solid #248bf5;
+  right: -0.35rem;
+  transform: translate(0, -0.1rem);
+}
+
+p.from-me::after {
+  background-color: #fff;
+  border-bottom-left-radius: 0.5rem;
+  right: -40px;
+  transform: translate(-30px, -2px);
+  width: 10px;
+} */
+
+.message-container .message-left {
+  background-color: var(--text-field-color-alt);
+  color: var(--mdc-theme-on-primary);
+  border-radius: .5rem;
+  padding: 0 .5rem 0 .5rem;
+  margin: .2rem 0 .2rem 0;
+}
+
+/* .left-point {
+  width: 0;
+  height: 0;
+  border-left: 2vh solid transparent;
+  border-right: 4vh solid transparent;
+  border-top: 10vh solid var(--main-dark-color);
+  position: absolute;
+  top: -19%;
+  left: -10%;
+  transform: rotate(100deg);
+} */
+
+.message-container .message {
+  display: flex;
+  align-items: center;
+}
+
+.chat-message-form-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 42vh;
+}
+
+.chat-message-text {
+  height: 8.5vw;
+  border-radius: 5%/50%;
+  width: 73vw;
+  border-style: none;
+  box-shadow: 0px 0px 18px 4px #00000014;
+  margin-left: .5vw;
+}
+
+.send-button {
+  border-radius: 50%;
+  width: 11vw;
+  height: 11vw;
+  border-style: none;
+  background-color: var(--mdc-theme-primary);
+    margin-top: auto;
+}
+
+/* End Chat Message section */
 
 /* Drawing section */
 .doodle-title {
@@ -918,7 +1050,6 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 /* Code Wen */
 .arrow_back_ios {
-  position: fixed;
   top: 0;
   left: 0;
   margin: 24;
@@ -926,13 +1057,11 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 .title_message {
-  position: fixed;
   top: 94;
   left: 24;
 }
 
 .message {
-  position: fixed;
   top: 202;
   left: 24;
   right: 24;
@@ -940,7 +1069,6 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 .message h1 {
   color: var(--mdc-theme-primary);
-  position: fixed;
   top: 175;
   left: 24;
   font-weight: 700;
@@ -948,8 +1076,14 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   letter-spacing: -1.5%;
 }
 
+.form-control {
+  width: 100%;
+  height: 15vh;
+  border-style: none;
+  box-shadow: 0px 0px 18px 4px #00000014;
+}
+
 .add button {
-  position: fixed;
   top: 278;
   left: 235;
   display: flex;
@@ -971,19 +1105,14 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 .line {
-  position: fixed;
-  top: 329;
-  left: 24;
-  right: 24;
   color: var(--mdc-text-field-icon);
   border: 1px solid rgba(102, 106, 112, 0.1);
   height: 0px;
-  width: auto;
-  width: 366;
+  width: 100%;
+  margin-bottom: 2vh;
 }
 
 .category_title {
-  position: fixed;
   color: var(--mdc-theme-primary);
   top: 350;
   left: 24;
@@ -993,7 +1122,6 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 .settings {
-  position: fixed;
   color: var(--mdc-theme-primary);
   top: 543;
   left: 24px;
@@ -1003,14 +1131,12 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 .accept {
-  position: fixed;
   color: var(--mdc-text-field-icon);
   top: 700;
   left: 24px;
 }
 
 .stay {
-  position: fixed;
   color: var(--mdc-text-field-icon);
   top: 740;
   left: 24;
@@ -1020,7 +1146,6 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   display: inline-block;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
-  position: fixed;
   top: 700;
   left: 296;
 }
@@ -1028,7 +1153,6 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 .form-switch i {
   position: relative;
   display: inline-block;
-  margin-right: 0.5rem;
   width: 46px;
   height: 26px;
   background-color: #e6e6e6;
@@ -1039,7 +1163,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 .form-switch i::before {
   content: "";
-  position: absolute;
+  position: relative;
   left: 0;
   width: 42px;
   height: 22px;
@@ -1091,7 +1215,6 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   display: inline-block;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
-  position: fixed;
   top: 740;
   left: 296;
 }
@@ -1099,7 +1222,6 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 .form-switch2 i {
   position: relative;
   display: inline-block;
-  margin-right: 0.5rem;
   width: 46px;
   height: 26px;
   background-color: #e6e6e6;
@@ -1110,7 +1232,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 .form-switch2 i::before {
   content: "";
-  position: absolute;
+  position: relative;
   left: 0;
   width: 42px;
   height: 22px;
@@ -1158,15 +1280,24 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   transform: translate3d(22px, 2px, 0);
 }
 
+.privacy-settings {
+  margin-bottom: 5vh;
+}
+
+.privacy-setting {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .send {
-  width: 414;
+  width: 90vw;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .send button {
-  position: fixed;
   bottom: 0;
   margin-bottom: 20;
   height: 40;
@@ -1187,12 +1318,10 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 .thumb {
-  position: fixed;
   width: 100%;
 }
 
 .thumb img {
-  position: fixed;
   right: 0;
   bottom: 0;
   width: 100%;
@@ -1217,7 +1346,6 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 .confirmation {
-  position: fixed;
   top: 200;
   left: 0;
   width: 100%;

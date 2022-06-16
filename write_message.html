@@ -27,12 +27,12 @@
     <div class="container">
     <div class="header">
         <div class="left">
-          <a href="home.html"><span class="material-icons">
-              arrow_back_ios
-              </span>   </a>   </div>
-        <a href="profilepage.html">
-      </div>
-      </a>
+          <a href="home.html">
+              <span class="material-icons">arrow_back_ios</span>   
+            </a>   
+        </div>
+        <!-- <a href="profilepage.html"> -->
+    </div>
 
     <div class="title_message">
         <h1>Write messages</h1>
@@ -40,12 +40,10 @@
 
     <div class="message">
         <h1>Message</h1>
-        <div id="form">
-            <form>
-                <label for="textarea">Write message</label>
-                <textarea id="text" class="form-control" cols="50" rows="3"></textarea>
-            </form>
-        </div>
+        <form>
+            <!-- <label for="textarea">Write message</label> -->
+            <textarea id="text" class="form-control" placeholder="Write message"></textarea>
+        </form>
     </div>
 
     <div class="add">
@@ -71,7 +69,7 @@
         </div>
       </div>
 
-      <div class="categories">
+      <div id="categories2" class="categories">
         <div class="category" id="category-item-4">
           <p>Nice message</p>
         </div>
@@ -82,19 +80,24 @@
       </div>
 
     <h1 class="settings">Settings</h1>
-    <p class="accept">Accept response</p>
-    <p class="stay">Stay anonymous</p>
 
-    <label class="form-switch">
-        <input type="checkbox">
-        <i></i>
-    </label>
-
-    <label class="form-switch2">
-        <input type="checkbox">
-        <i></i>
-    </label>
-
+    <div class="privacy-settings">
+      <div class="privacy-setting">
+        <p class="accept">Accept response</p>
+        <label class="form-switch">
+          <input type="checkbox">
+          <i></i>
+        </label>
+      </div>
+      <div class="privacy-setting">
+        <p class="stay">Stay anonymous</p>
+        <label class="form-switch2">
+          <input type="checkbox">
+          <i></i>
+        </label>
+      </div>
+    </div>
+    
 
     <div class="send">
         <button id="btnDownload" id="btn-save" type="submit" class="btn btn-primary"><a href="me">Send message!</a></button>

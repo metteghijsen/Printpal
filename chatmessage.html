@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        viewport-fit="cover" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/stylesheet.css" type="text/css" />
+    <!--    Bootstrap icons inladen-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+
+    <!--    Google icons inladen-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+    <!--    Material inladen-->
+    <link rel="stylesheet"
+        href="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.css" />
+
+    <!--Manifest inladen voor PWA-->
+    <link rel="manifest" href="manifest.json" />
+
+    <link rel="icon" href="images/printpal512icon.png" />
+    <title>Printpal</title>
+
+    <script type="module" src="js/pwa.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header-container">
+            <div id="header" class="header">
+                <div class="left">
+                    <a href="write_message.html"><span class="material-icons">
+                            arrow_back_ios
+                        </span> </a>
+                </div>
+                <a href="profilepage.html">
+            </div>
+            </a>
+            <div class="chatmessage-title">
+                <h1>Sascha</h1>
+            </div>
+            <div class="profile-picture push">
+                <img class="profilePicture" src="images/profilepictures/Rectangle 40.png" />
+            </div>
+        </div>
+        
+        
+        <div class="message-container">
+            <div class="messages-right push">
+                <span class="message-right">
+                    <p>Hey there!</p>
+                </span>
+            </div>
+            <div class="messages-right push">
+                <span class="message-right">
+                    <p class="from-me">Thanks for the nice message!</p>
+                </span>
+            </div>
+            <div class="messages-left">
+                <span class="message-left">
+                    <p>No problem :)</p>
+                </span>
+            </div>
+            <div class="messages-left">
+                <span class="message-left">
+                    <p>I hope you're doing better now</p>
+                </span>
+            </div>
+            <div class="messages-right push">
+                <span class="message-right">
+                    <p>It really helped</p>
+                </span>
+            </div>
+            <div class="messages-left">
+                <span class="message-left">
+                    <p>Glad i could help you!</p>
+                </span>
+            </div>
+        </div>
+        <div class="chat-message-form-container">
+                <!-- <label for="textarea">Write message</label> -->
+                <input type="text" class="chat-message-text" placeholder="Type your message here"></input>
+                <input type="submit" class="send-button"></input>
+        </div>
+    </div>
+</body>
+
+</html>
