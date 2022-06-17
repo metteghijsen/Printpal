@@ -1,27 +1,50 @@
-const myJSON = '[{"id":"0", "message":"Message 1"}, {"id":"1", "message":"Message 2"}, {"id":"2", "message":"Message 3"}, {"id":"3", "message":"Message 4"}, {"id":"4", "message":"Message 5"}, {"id":"5", "message":"Message 6"}]';
-// Log myJSON variable
-console.log(myJSON);
-// Parse Json dummy array
-const obj = JSON.parse(myJSON);
-// Log Json dummy array
-console.log(obj);
-// Get random number between 0 and 5
-let randInt = obj[parseInt(Math.floor(Math.random() * obj.length))];
-// Log random int
-console.log(randInt);
-// Get Message element
-const message = document.getElementById('message');
-message.innerHTML = randInt.message;
-// Log message element
-console.log(message);
+/* Firebase Database Connection */
 
-
+import {
+    initializeApp
+  }
+  from "https://www.gstatic.com/firebasejs/9.1.1/firebase-app.js";
+  
+  import {
+    getAnalytics
+  }
+  from "https://www.gstatic.com/firebasejs/9.1.1/firebase-analytics.js";
+  
+  import {
+    getDatabase,
+    ref,
+    set,
+    get,
+    child,
+    update
+  }
+  from 'https://www.gstatic.com/firebasejs/9.1.1/firebase-database.js';
+  const firebaseConfig = {
+    apiKey: "AIzaSyBOAn8uYKrk80TdpijN8gI8GYAyBfZ0qrw",
+    authDomain: "printpal-fcd92.firebaseapp.com",
+    projectId: "printpal-fcd92",
+    storageBucket: "printpal-fcd92.appspot.com",
+    messagingSenderId: "4029039652",
+    appId: "1:4029039652:web:4a023c24debd05c21004b1",
+    // measurementId: "G-KMWRY5M814",
+    databaseURL: "https://printpal-fcd92-default-rtdb.firebaseio.com/"
+  };
+  
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+  const database = getDatabase(app);
+  const dbRef = ref(getDatabase(app));
+      
+/**
+ * Gets the message from the database and displays it.           
+ * @returns None           
+ */
 function getMessage(){
-    const dbRef = ref(getDatabase(app));
-    console.log(dbref);
-    get(child(dbref, "users/" + document.getElementById('userid').value)).then((snapshot) => {
+    // console.log(dbRef);
+    get(child(dbRef, 'messages/')).then((snapshot) => {
         if(snapshot.exists()){
-            console.log("tried");
+            snapShotToArray(snapshot);
         } else {
             console.log("No data available");
         }
@@ -30,3 +53,53 @@ function getMessage(){
     });
 }
 
+/**
+ * Shows a message in the message box.       
+ * @param {string} message - the message to show in the message box.       
+ * @returns None       
+ */
+const showMessage = document.getElementById('message');
+/**
+ * Creates a new element with the given tag name and text content.       
+ * @param {string} tagName - the tag name of the element to create       
+ * @param {string} text - the text content of the element to create       
+ * @returns {HTMLElement} - the created element       
+ */
+const message_val = document.createElement("h1")
+
+/**
+ * Takes in a snapshot and returns an array of the values in the snapshot.       
+ * @param {firebase.database.DataSnapshot} snapshot - the snapshot to convert to an array.       
+ * @returns {Array} - the array of values in the snapshot.       
+ */
+function snapShotToArray(snapshot) {
+    let returnArr = [];
+
+    snapshot.forEach(function(childSnapshot) {
+        let item = childSnapshot.val();
+        returnArr.push(item);
+    });
+
+    const rnd = Math.floor(Math.random() * returnArr.length);
+    console.log(rnd);
+
+    const message = returnArr[rnd];
+    console.log(message);
+    
+    message_val.innerHTML = message.anonymousmessage;
+    showMessage.appendChild(message_val);
+
+    // return returnArr;
+};
+
+/**
+ * Adds an event listener to the button that will call the getMessage function.           
+ * @returns None           
+ */
+window.addEventListener('DOMContentLoaded', (event) => {
+    console.log('DOM fully loaded and parsed');
+    document.getElementById("message2").addEventListener("click", e => {
+        console.log('nextpage')
+        getMessage();
+    });
+});
