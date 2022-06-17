@@ -1,157 +1,161 @@
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/stylesheet.css" type="text/css" />
+    <!--    Bootstrap icons inladen-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
-  <!--    Bootstrap icons inladen-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!--    Google icons inladen-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
 
-  <!--    Google icons inladen-->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!--    Material inladen-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.css"
+    />
 
-  <!--    Material inladen-->
-  <link rel="stylesheet" href="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.css">
+    <!--Manifest inladen voor PWA-->
+    <link rel="manifest" href="manifest.json" />
 
-  <!--Manifest inladen voor PWA-->
-  <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="./images/P_icon.png" />
+    <title>Printpal Writing messages</title>
 
-  <link rel="icon" href="./images/P_icon.png">
-  <title>Printpal Writing messages</title>
+    <script type="module" src="js/pwa.js"></script>
+    <script type="module" src="js/sendmessage.js"></script>
+  </head>
 
-  <script type="module" src="js/pwa.js"></script>
-  <script type="module" src="js/sendmessage.js"></script>
-</head>
-
-<body>
-  <div class="container">
-    <div class="header">
-      <div class="left">
-        <a href="home.html" class="back-btn">
-          <span class="material-icons">arrow_back_ios_new</span>
-        </a>
-      </div>
-      <!-- <a href="profilepage.html"> -->
-    </div>
-
-    <div class="title">
-      <h1>Send print</h1>
-    </div>
-
-    <div class="message">
-      <h1>Message</h1>
-      <form>
-        <!-- <label for="textarea">Write message</label> -->
-        <textarea id="text" class="form-control" placeholder="Write message"></textarea>
-      </form>
-    </div>
-
-    <div class="add">
-      <button><a href="doodle.html"><span>Add doodle</span></a></button>
-    </div>
-
-    <div class="break">
-      <div class="line"></div>
-    </div>
-
-    <h1 class="category_title">Category</h1>
-    <div class="categories">
-      <div class="category" id="category-item-1">
-        <p>Motivation</p>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="left">
+          <a href="home.html" class="back-btn">
+            <span class="material-icons">arrow_back_ios_new</span>
+          </a>
+        </div>
+        <!-- <a href="profilepage.html"> -->
       </div>
 
-      <div class="category" id="category-item-2">
-        <p>Vent</p>
+      <div class="title">
+        <h1>Send print</h1>
       </div>
 
-      <div class="category" id="category-item-3">
-        <p>Meme</p>
+      <div class="message">
+        <h1>Message</h1>
+        <form>
+          <!-- <label for="textarea">Write message</label> -->
+          <textarea
+            id="messageForm"
+            class="form-control"
+            placeholder="Write message"
+          ></textarea>
+        </form>
       </div>
+
+      <div class="add">
+        <button>
+          <a href="doodle.html"><span>Add doodle</span></a>
+        </button>
+      </div>
+
+      <div class="break">
+        <div class="line"></div>
+      </div>
+
+      <h1 class="category_title">Category</h1>
+      <div class="categories">
+        <div class="category" id="category-item-1">
+          <p>Motivation</p>
+        </div>
+
+        <div class="category" id="category-item-2">
+          <p>Vent</p>
+        </div>
+
+        <div class="category" id="category-item-3">
+          <p>Meme</p>
+        </div>
+      </div>
+
+      <div id="categories2" class="categories">
+        <div class="category" id="category-item-4">
+          <p>Nice message</p>
+        </div>
+
+        <div class="category" id="category-item-5">
+          <p>Storytime</p>
+        </div>
+      </div>
+
+      <h1 class="settings">Settings</h1>
+
+      <div class="privacy-settings">
+        <div class="privacy-setting">
+          <p class="accept">Accept response</p>
+          <label class="form-switch">
+            <input type="checkbox" />
+            <i></i>
+          </label>
+        </div>
+        <div class="privacy-setting">
+          <p class="stay">Stay anonymous</p>
+          <label class="form-switch2">
+            <input type="checkbox" />
+            <i></i>
+          </label>
+        </div>
+      </div>
+
+      <button id="sendbutton">
+        <div class="send">
+          <a href="message_send.html" class="open-prints-btn">Send</a>
+        </div>
+      </button>
     </div>
 
-    <div id="categories2" class="categories">
-      <div class="category" id="category-item-4">
-        <p>Nice message</p>
-      </div>
+    <script src="js/preferences.js"></script>
+    <script src="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.js"></script>
+    <script src="./convert.js"></script>
+    <script src="js/sendmessage.js"></script>
+    <script type="text/javascript">
+      function downloadFile(filename, content) {
+        const element = document.createElement("a");
 
-      <div class="category" id="category-item-5">
-        <p>Storytime</p>
-      </div>
-    </div>
+        const blob = new Blob([content], { type: "plain/text" });
 
-    <h1 class="settings">Settings</h1>
+        const fileUrl = URL.createObjectURL(blob);
 
-    <div class="privacy-settings">
-      <div class="privacy-setting">
-        <p class="accept">Accept response</p>
-        <label class="form-switch">
-          <input type="checkbox">
-          <i></i>
-        </label>
-      </div>
-      <div class="privacy-setting">
-        <p class="stay">Stay anonymous</p>
-        <label class="form-switch2">
-          <input type="checkbox">
-          <i></i>
-        </label>
-      </div>
-    </div>
+        element.setAttribute("href", fileUrl); //file location
+        element.setAttribute("download", filename); // file name
+        element.style.display = "none";
 
+        document.body.appendChild(element);
+        element.click();
 
-    <div class="send">
-      <a href="message_send.html" class="open-prints-btn">Send</a>
-    </div>
+        document.body.removeChild(element);
+      }
 
-  </div>
+      window.onload = () => {
+        document.getElementById("download").addEventListener("click", (e) => {
+          const filename = document.getElementById("filename").value;
 
-  <script src="js/preferences.js"></script>
-  <script src="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.js"></script>
-  <script src="./convert.js"></script>
-  <script type="text/javascript">
-    function downloadFile(filename, content) {
-
-      const element = document.createElement('a');
-
-
-      const blob = new Blob([content], { type: 'plain/text' });
-
-
-      const fileUrl = URL.createObjectURL(blob);
-
-
-      element.setAttribute('href', fileUrl); //file location
-      element.setAttribute('download', filename); // file name
-      element.style.display = 'none';
-
-
-      document.body.appendChild(element);
-      element.click();
-
-
-      document.body.removeChild(element);
-    };
-
-    window.onload = () => {
-      document.getElementById('download').
-        addEventListener('click', e => {
-
-
-          const filename = document.getElementById('filename').value;
-
-
-          const content = document.getElementById('text').value;
-
+          const content = document.getElementById("text").value;
 
           if (filename && content) {
             downloadFile(filename, content);
           }
         });
-    };
-  </script>
-
-</body>
-
+      };
+    </script>
+  </body>
 </html>
