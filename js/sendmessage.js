@@ -52,6 +52,8 @@ window.addEventListener("DOMContentLoaded", (event) => {
   document.getElementById("sendbutton").addEventListener("click", (e) => {
     console.log("nextpage");
     writeUserData();
-    window.location.href = "message_send.html";
+    setTimeout(()=>{
+      window.location.href = "message_send.html";
+    }, 800);
   });
 });
