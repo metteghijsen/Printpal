@@ -136,6 +136,7 @@ function erase() {
 }
 
 function save() {
+    window.location.href = "write_message.html";
     canvas.toBlob(async blob => {
     const blob_url = URL.createObjectURL(blob);
     const ref = db.collection('blob').doc('blob');
