@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51dcc6e6-81f7-431f-a13c-471b16c5d15f" name="Default Changelist" comment="Connectie met database hersteld" />
+    <list default="true" id="51dcc6e6-81f7-431f-a13c-471b16c5d15f" name="Default Changelist" comment="Link naar messagepagina en doodlepagina gefixt" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -106,6 +106,7 @@
       <workItem from="1655373575073" duration="4000" />
       <workItem from="1655381283712" duration="2659000" />
       <workItem from="1655711589605" duration="2472000" />
+      <workItem from="1655718363542" duration="323000" />
     </task>
     <task id="LOCAL-00001" summary="Basis PWA opgezet">
       <created>1649233631368</created>
@@ -324,7 +325,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655716734356</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Link naar messagepagina en doodlepagina gefixt">
+      <created>1655718651979</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1655718651979</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -355,7 +363,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Textbox label error gefixt, design tot nu toe responsive gemaakt" />
     <MESSAGE value="Footer gemaakt, kleine foutjes opgeschoond" />
     <MESSAGE value="Material theme in proberen te stellen" />
     <MESSAGE value="Theming aangepast, textfield probleem proberen op te lossen" />
@@ -380,6 +387,7 @@
     <MESSAGE value="Styling van login en signup scherm gelijk gemaakt met de rest van de app" />
     <MESSAGE value="Minor changes" />
     <MESSAGE value="Connectie met database hersteld" />
-    <option name="LAST_COMMIT_MESSAGE" value="Connectie met database hersteld" />
+    <MESSAGE value="Link naar messagepagina en doodlepagina gefixt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Link naar messagepagina en doodlepagina gefixt" />
   </component>
 </project>

@@ -2,6 +2,7 @@
 
 html {
     background-color: #ffffff !important;
+    -webkit-tap-highlight-color: transparent;
 }
 
 @font-face {
