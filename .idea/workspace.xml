@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51dcc6e6-81f7-431f-a13c-471b16c5d15f" name="Default Changelist" comment="Blauwe highlightkleur weggehaald, en downloadknop weggehaald.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="51dcc6e6-81f7-431f-a13c-471b16c5d15f" name="Default Changelist" comment="Lettertypen toegankelijk gemaakt voor elke browser, blauwe highlights weggehaald, message database gefixt :)">
       <change beforePath="$PROJECT_DIR$/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylesheet.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -111,7 +110,7 @@
       <workItem from="1655711589605" duration="2472000" />
       <workItem from="1655718363542" duration="323000" />
       <workItem from="1655719212633" duration="1429000" />
-      <workItem from="1655804654306" duration="318000" />
+      <workItem from="1655804654306" duration="714000" />
     </task>
     <task id="LOCAL-00001" summary="Basis PWA opgezet">
       <created>1649233631368</created>
@@ -344,7 +343,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655719441098</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Lettertypen toegankelijk gemaakt voor elke browser, blauwe highlights weggehaald, message database gefixt :)">
+      <created>1655805130763</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1655805130763</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -375,7 +381,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Material theme in proberen te stellen" />
     <MESSAGE value="Theming aangepast, textfield probleem proberen op te lossen" />
     <MESSAGE value="Taakbalk gemaakt met behulp van Material Design componenten" />
     <MESSAGE value="Login scherm proberen te maken.&#10;- Twee tekstvakken toegevoegd&#10;- Twee knoppen toegevoegd" />
@@ -400,6 +405,7 @@
     <MESSAGE value="Connectie met database hersteld" />
     <MESSAGE value="Link naar messagepagina en doodlepagina gefixt" />
     <MESSAGE value="Blauwe highlightkleur weggehaald, en downloadknop weggehaald." />
-    <option name="LAST_COMMIT_MESSAGE" value="Blauwe highlightkleur weggehaald, en downloadknop weggehaald." />
+    <MESSAGE value="Lettertypen toegankelijk gemaakt voor elke browser, blauwe highlights weggehaald, message database gefixt :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lettertypen toegankelijk gemaakt voor elke browser, blauwe highlights weggehaald, message database gefixt :)" />
   </component>
 </project>
