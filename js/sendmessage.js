@@ -54,6 +54,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
     writeUserData();
     setTimeout(()=>{
       window.location.href = "message_send.html";
-    }, 800);
+    }, 1500);
   });
 });

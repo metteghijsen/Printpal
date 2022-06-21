@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51dcc6e6-81f7-431f-a13c-471b16c5d15f" name="Default Changelist" comment="Link naar messagepagina en doodlepagina gefixt" />
+    <list default="true" id="51dcc6e6-81f7-431f-a13c-471b16c5d15f" name="Default Changelist" comment="Blauwe highlightkleur weggehaald, en downloadknop weggehaald.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylesheet.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -107,6 +110,8 @@
       <workItem from="1655381283712" duration="2659000" />
       <workItem from="1655711589605" duration="2472000" />
       <workItem from="1655718363542" duration="323000" />
+      <workItem from="1655719212633" duration="1429000" />
+      <workItem from="1655804654306" duration="318000" />
     </task>
     <task id="LOCAL-00001" summary="Basis PWA opgezet">
       <created>1649233631368</created>
@@ -332,7 +337,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655718651979</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Blauwe highlightkleur weggehaald, en downloadknop weggehaald.">
+      <created>1655719441098</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1655719441098</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -363,7 +375,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Footer gemaakt, kleine foutjes opgeschoond" />
     <MESSAGE value="Material theme in proberen te stellen" />
     <MESSAGE value="Theming aangepast, textfield probleem proberen op te lossen" />
     <MESSAGE value="Taakbalk gemaakt met behulp van Material Design componenten" />
@@ -388,6 +399,7 @@
     <MESSAGE value="Minor changes" />
     <MESSAGE value="Connectie met database hersteld" />
     <MESSAGE value="Link naar messagepagina en doodlepagina gefixt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Link naar messagepagina en doodlepagina gefixt" />
+    <MESSAGE value="Blauwe highlightkleur weggehaald, en downloadknop weggehaald." />
+    <option name="LAST_COMMIT_MESSAGE" value="Blauwe highlightkleur weggehaald, en downloadknop weggehaald." />
   </component>
 </project>
