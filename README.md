@@ -1,5 +1,4 @@
-<img src="https://git.fhict.nl/I441782/printpal/-/raw/main/images/printpal_banner.png" width="100%" Height="100%">
-
+![printpal_banner (1)](https://user-images.githubusercontent.com/84067173/175282808-724c4b97-2f25-45ed-8182-88b278e14836.png)
 
 # PrintPal
 The number of young people with depressive symptoms is higher than ever after thecorona period. There are queues at psychologists that last for months, and peoplehave to wait a long time before they can go to someone with their problems. To give people a temporary way to talk about their problems, 4 students from Fontys University of Applied Sciences in Eindhoven came up with an innovation: Printpal
